@@ -154,3 +154,64 @@ ul{
 .large-input {
     height: 80px;
 }
+
+/* Step 4 */
+
+.step4-input-left-content{
+	border:1px solid #e6e6e6; 
+	border-top:0; 
+	overflow:hidden; 
+	padding:0 0 20px 0
+}
+.left-content-title{
+	height:50px; 
+	line-height:50px; 
+	padding:0 0 0 18px; 
+	position:relative;
+	font-weight: bold;
+}
+.left-content-title i{
+	position:absolute; 
+	left:0; 
+	top:0; 
+	width:18px; 
+	height:50px;
+	background:url(../images/ioc_l.png) no-repeat 0 center; 
+	cursor:pointer
+}
+.left-content-title{
+	color:#000
+}
+.left-content-title:hover i{
+	background:url(../images/ioc_la.png) no-repeat 0 center;
+}
+.left-content-title:hover{
+	color:#ff5825
+}
+.left-content-title.hover i{
+	background:url(../images/ioc_b.png) no-repeat 0 center;
+}
+.left-content-txt{
+	/* padding:0 0 20px 18px;  */
+	display:none
+}
+
+.left-content-txt ul li:hover, .right-content-txt ul li:hover{
+	border:2px solid lightblue; 
+}
+.left-content-txt .highlight, .right-content-txt .highlight{
+	background-color:lightyellow;
+}
+
+.left-content-txt-item, .right-content-txt-item{
+	margin-right: 10px;
+}
+
+.DL-image{
+	position: absolute;
+}
+
+.DL-image img{
+	width:100%;
+	height: auto;
+}

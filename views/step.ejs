@@ -31,6 +31,7 @@
         <div class="page-container">
             <div class="row">
                 <div class="col-lg-4">
+                    <div class="DL-image hide"><img src="images/bg.jpg"></div>
                     <div class="intro-flow">
                         <div class="intro-list">
                             <div class="intro-list-left">
@@ -165,51 +166,267 @@
                         <!-- End Step 2 -->
 
                         <!-- Step 3 -->
-                        <div class="page" id="step3">
+                        <div class="page hide" id="step3">
                             <h3>Define Subject Learning Outcomes (SLOs)</h3>
                             <p>Provide between 5 and 7</p>
-                            <div class="row">
-                                <div class="col-lg-2">
-                                   <p>SLO1</p>
+                            <div id="step3-input">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <p>SLO1</p>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <textarea class="form-input small-input" id="SLO1"></textarea>
+                                    </div>
                                 </div>
-                                <div class="col-lg-10">
-                                   <textarea class="form-input small-input" id="SLO1"></textarea>
-                               </div>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <p>SLO2</p>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <textarea class="form-input small-input" id="SLO2"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <p>SLO3</p>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <textarea class="form-input small-input" id="SLO3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <p>SLO4</p>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <textarea class="form-input small-input" id="SLO4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <p>SLO5</p>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <textarea class="form-input small-input" id="SLO5"></textarea>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-2">
-                                   <p>SLO2</p>
+
+                            <button id="remove" type="button" class="btn btn-success">Remove</button>
+                            <button id="add" type="button" class="btn btn-success">Add</button>
+                            <button id="step3-step4" type="button" class="btn btn-success">Next</button>
+                        </div>
+                        <!-- End Step 3 -->
+
+                        <!-- Step 4 -->
+                        <div class="page" id="step4">
+                            <h3>Map SLOs against associated Competency Standards or Program Learning Outcomes</h3>
+                            <div id="step4-input">
+                                <mark><strong>SLO1:</strong>1231323</mark>
+                                <p><strong>BaEng</strong> Engineers Australia Stage 1 Competency Standard</p>
+                                <div class='row'>
+                                    <!-- Step 4 Left content-->
+                                    <div class="col-lg-6">
+                                        <div class="step4-input-left-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="left-content-title">
+                                                        <i></i>
+                                                        1. KNOWLEDGE AND SKILL BASE
+                                                    </div>
+                                                    <div class="left-content-txt">
+                                                        <ul>
+                                                            <li class="left-content-txt-item" data-type="0"><p><strong>1.1 Comprehensive, theory based understanding</strong> of the underpinning natural and physical sciences and the engineering fundamentals applicable to the engineering discipline.</p></li>
+                                                            <li class="left-content-txt-item" data-type="1"><p><strong>1.2 Conceptual understanding</strong> of the, mathematics, numerical analysis, statistics, and computer and information sciences which underpin the engineering discipline.</p></li>
+                                                            <li class="left-content-txt-item" data-type="2"><p><strong>1.3 In depth understanding</strong> of specialist bodies of knowledge within the engineering discipline.</p></li>
+                                                            <li class="left-content-txt-item" data-type="3"><p><strong>1.4 Discernment</strong> of knowledge development and research directions within the engineering discipline.</p></li>
+                                                            <li class="left-content-txt-item" data-type="4"><p><strong>1.5 Knowledge</strong> of contextual factors impacting the engineering discipline.</p></li>
+                                                            <li class="left-content-txt-item" data-type="5"><p><strong>1.6 Understanding</strong> of the scope, principles, norms, accountabilities and bounds of contemporary engineering practice in the engineering discipline.</p></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left-content-title">
+                                                        <i></i>
+                                                        2. ENGINEERING APPLICATION ABILITY
+                                                    </div>
+                                                    <div class="left-content-txt">
+                                                        <ul>
+                                                            <li class="left-content-txt-item" data-type="6"><p><strong>2.1 Application</strong> of established engineering methods to complex engineering problem solving.</p></li>
+                                                            <li class="left-content-txt-item" data-type="7"><p><strong>2.2 Fluent application</strong> of engineering techniques, tools and resources.</p></li>
+                                                            <li class="left-content-txt-item" data-type="8"><p><strong>2.3 Application</strong> of systematic engineering synthesis and design processes.</p></li>
+                                                            <li class="left-content-txt-item" data-type="9"><p><strong>2.4 Application</strong> of systematic approaches to the conduct and management of engineering projects.</p></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left-content-title">
+                                                        <i></i>
+                                                        3. PROFESSIONAL AND PERSONAL ATTRIBUTES
+                                                    </div>
+                                                    <div class="left-content-txt">
+                                                        <ul>
+                                                            <li class="left-content-txt-item" data-type="10"><p><strong>3.1</strong> Ethical conduct and professional accountability.</p></li>
+                                                            <li class="left-content-txt-item" data-type="11"><p><strong>3.2</strong> Effective oral and written communication in professional and lay domains.</p></li>
+                                                            <li class="left-content-txt-item" data-type="12"><p><strong>3.3</strong> Creative, innovative and pro-active demeanour.</p></li>
+                                                            <li class="left-content-txt-item" data-type="13"><p><strong>3.4</strong> Professional use and management of information.</p></li>
+                                                            <li class="left-content-txt-item" data-type="14"><p><strong>3.5</strong> Orderly management of self, and professional conduct.</p></li>
+                                                            <li class="left-content-txt-item" data-type="15"><p><strong>3.6</strong> Effective team membership and team leadership.</p></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul> 
+                                        </div>
+                                    </div>
+                                    <!-- End Step 4 Left content-->
+                                    <!-- Step 4 Right content-->
+                                    <div class="col-lg-6">
+                                        <div class="step4-input-right-content">
+                                            <div class="right-content hide">
+                                                <div class="right-content-title">
+                                                    <strong>1.1 Comprehensive, theory based understanding</strong> of the underpinning natural and physical sciences and the engineering fundamentals applicable to the engineering discipline.
+                                                </div>
+                                                <div class="right-content-txt">
+                                                    <div style="margin-top: 5px;"> <i>Exemplars: </i></div>
+                                                    <ul>
+                                                        <hr>
+                                                        <li class="right-content-txt-item">
+                                                            <div class="row">
+                                                                <div class="col-lg-9">
+                                                                    <strong>a) Engages</strong> with the engineering discipline at a phenomenological level, applying sciences and engineering fundamentals to systematic investigation, interpretation, analysis and innovative solution of complex problems and broader aspects of engineering practice.
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <div class="checkbox-inline">
+                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox0" id="step4-SLO1-checkbox0"/>
+                                                                        <select id="step4-SLO1-select0" class="right-content-txt-select">
+                                                                            <option value ="0">DL1</option>
+                                                                            <option value ="1">DL2</option>
+                                                                            <option value ="2">DL3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <hr>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="right-content hide">
+                                                <div class="right-content-title">
+                                                    <strong>1.2 Conceptual understanding</strong> of the, mathematics, numerical analysis, statistics, and computer and information sciences which underpin the engineering discipline.
+                                                </div>
+                                                <div class="right-content-txt">
+                                                    <div style="margin-top: 5px;"> <i>Exemplars: </i></div>
+                                                    <ul>
+                                                        <hr>
+                                                        <li class="right-content-txt-item">
+                                                            <!-- <div class="row highlight"> -->
+                                                            <div class="row">
+                                                                <div class="col-lg-9">
+                                                                    <strong>a) Develops and fluently applies</strong> relevant investigation analysis, interpretation, assessment, characterisation, prediction, evaluation, modelling, decision making, measurement, evaluation, knowledge management and communication tools and techniques pertinent to the engineering discipline.
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <div class="checkbox-inline">
+                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox1" id="step4-SLO1-checkbox1" />
+                                                                        <select id="step4-SLO1-select1" class="right-content-txt-select">
+                                                                            <option value ="0">DL1</option>
+                                                                            <option value ="1">DL2</option>
+                                                                            <option value ="2">DL3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <hr>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="right-content hide">
+                                                <div class="right-content-title">
+                                                    <strong>1.3 In depth understanding</strong> of specialist bodies of knowledge within the engineering discipline.
+                                                </div>
+                                                <div class="right-content-txt">
+                                                    <div style="margin-top: 5px;"> <i>Exemplars: </i></div>
+                                                    <ul>
+                                                        <hr>
+                                                        <li class="right-content-txt-item">
+                                                            <!-- <div class="row highlight"> -->
+                                                            <div class="row">
+                                                                <div class="col-lg-9">
+                                                                    <strong>a) Proficiently applies</strong> advanced technical knowledge and skills in at least one specialist practice domain of the engineering discipline.
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <div class="checkbox-inline">
+                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox2" id="step4-SLO1-checkbox2" />
+                                                                        <select id="step4-SLO1-select2" class="right-content-txt-select">
+                                                                            <option value ="0">DL1</option>
+                                                                            <option value ="1">DL2</option>
+                                                                            <option value ="2">DL3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <hr>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="right-content hide">
+                                                <div class="right-content-title">
+                                                    <strong>1.4 Discernment</strong> of knowledge development and research directions within the engineering discipline.
+                                                </div>
+                                                <div class="right-content-txt">
+                                                    <div style="margin-top: 5px;"> <i>Exemplars: </i></div>
+                                                    <ul>
+                                                        <hr>
+                                                        <li class="right-content-txt-item">
+                                                            <!-- <div class="row highlight"> -->
+                                                            <div class="row">
+                                                                <div class="col-lg-9">
+                                                                    <strong>a) Identifies and critically appraises</strong> current developments, advanced technologies, emerging issues and interdisciplinary linkages in at least one specialist practice domain of the engineering discipline.
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <div class="checkbox-inline">
+                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                        <select id="step4-SLO1-select3" class="right-content-txt-select">
+                                                                            <option value ="0">DL1</option>
+                                                                            <option value ="1">DL2</option>
+                                                                            <option value ="2">DL3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <hr>
+                                                        <li class="right-content-txt-item">
+                                                            <!-- <div class="row highlight"> -->
+                                                            <div class="row">
+                                                                <div class="col-lg-9">
+                                                                    <strong>b) Interprets and applies</strong> selected research literature to inform engineering application in at least one specialist domain of the engineering discipline.
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <div class="checkbox-inline">
+                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
+                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                            <option value ="0">DL1</option>
+                                                                            <option value ="1">DL2</option>
+                                                                            <option value ="2">DL3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <hr>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Step 4 Right content-->
                                 </div>
-                                <div class="col-lg-10">
-                                   <textarea class="form-input small-input" id="SLO2"></textarea>
-                               </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-2">
-                                   <p>SLO3</p>
-                                </div>
-                                <div class="col-lg-10">
-                                   <textarea class="form-input small-input" id="SLO3"></textarea>
-                               </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-2">
-                                   <p>SLO4</p>
-                                </div>
-                                <div class="col-lg-10">
-                                   <textarea class="form-input small-input" id="SLO4"></textarea>
-                               </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-2">
-                                   <p>SLO5</p>
-                                </div>
-                                <div class="col-lg-10">
-                                   <textarea class="form-input small-input" id="SLO5"></textarea>
-                               </div>
                             </div>
                         </div>
-                        <!-- End Step 2 -->
+                        <!-- End Step 4 -->
 
                         <button id="next" type="button" class="btn btn-success">Next</button>
                     </div>
@@ -272,8 +489,8 @@
         <script src="js/jquery-ui.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="js/scrollable.js"></script>
-        <!-- <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-         -->
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+        
         <script src="js/step.js"></script>
         <script type="text/javascript">
             $(function(){
