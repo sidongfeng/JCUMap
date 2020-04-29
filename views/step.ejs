@@ -87,7 +87,7 @@
                 <div class="col-lg-8">
                     <div class="items">
                         <!-- Step 2 -->
-                        <div class="page hide">
+                        <div class="page" id="step2">
                             <h3>Program Mapping Project</h3>
                             <p>123</p>
                             <h3>Subject Information</h3>
@@ -166,7 +166,7 @@
                         <!-- End Step 2 -->
 
                         <!-- Step 3 -->
-                        <div class="page hide" id="step3">
+                        <div class="page" id="step3">
                             <h3>Define Subject Learning Outcomes (SLOs)</h3>
                             <p>Provide between 5 and 7</p>
                             <div id="step3-input">
@@ -214,7 +214,6 @@
 
                             <button id="remove" type="button" class="btn btn-success">Remove</button>
                             <button id="add" type="button" class="btn btn-success">Add</button>
-                            <button id="step3-step4" type="button" class="btn btn-success">Next</button>
                         </div>
                         <!-- End Step 3 -->
 
@@ -222,7 +221,7 @@
                         <div class="page" id="step4">
                             <h3>Map SLOs against associated Competency Standards or Program Learning Outcomes</h3>
                             <div id="step4-input">
-                                <mark><strong>SLO1:</strong>1231323</mark>
+                                <mark class="title"></mark>
                                 <p><strong>BaEng</strong> Engineers Australia Stage 1 Competency Standard</p>
                                 <div class='row'>
                                     <!-- Step 4 Left content-->
@@ -295,10 +294,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) Engages</strong> with the engineering discipline at a phenomenological level, applying sciences and engineering fundamentals to systematic investigation, interpretation, analysis and innovative solution of complex problems and broader aspects of engineering practice.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox0" id="step4-SLO1-checkbox0"/>
-                                                                        <select id="step4-SLO1-select0" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox"/>
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -325,10 +324,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) Develops and fluently applies</strong> relevant investigation analysis, interpretation, assessment, characterisation, prediction, evaluation, modelling, decision making, measurement, evaluation, knowledge management and communication tools and techniques pertinent to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox1" id="step4-SLO1-checkbox1" />
-                                                                        <select id="step4-SLO1-select1" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -355,10 +354,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) Proficiently applies</strong> advanced technical knowledge and skills in at least one specialist practice domain of the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox2" id="step4-SLO1-checkbox2" />
-                                                                        <select id="step4-SLO1-select2" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -385,10 +384,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) Identifies and critically appraises</strong> current developments, advanced technologies, emerging issues and interdisciplinary linkages in at least one specialist practice domain of the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
-                                                                        <select id="step4-SLO1-select3" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -404,10 +403,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) Interprets and applies</strong> selected research literature to inform engineering application in at least one specialist domain of the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -434,10 +433,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) Identifies and understands</strong> the interactions between engineering systems and people in the social, cultural, environmental, commercial, legal and political contexts in which they operate, including both the positive role of engineering in sustainable development and the potentially adverse impacts of engineering activity in the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
-                                                                        <select id="step4-SLO1-select3" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox"/>
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -453,10 +452,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) Is aware of</strong> the founding principles of human factors relevant to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox"/>
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -472,10 +471,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) Is aware of</strong> the fundamentals of business and enterprise management.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -491,10 +490,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>d) Identifies</strong> the structure, roles and capabilities of the engineering workforce.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -510,10 +509,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>e) Appreciates</strong> the issues associated with international engineering practice and global operating contexts.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -540,9 +539,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) Applies</strong> systematic principles of engineering design relevant to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -559,10 +558,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) Appreciates</strong> the basis and relevance of standards and codes of practice, as well as legislative and statutory requirements applicable to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -578,10 +577,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) Appreciates</strong> the principles of safety engineering, risk management and the health and safety responsibilities of the professional engineer, including legislative requirements applicable to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -597,10 +596,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>d) Appreciates</strong> the social, environmental and economic principles of sustainable engineering practice.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -616,10 +615,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>e) Understands</strong> the fundamental principles of engineering project management as a basis for planning, organising and managing resources.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -635,10 +634,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>f) Appreciates</strong> the formal structures and methodologies of systems engineering as a holistic basis for managing complexity and sustainability in engineering practice.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -665,9 +664,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) </strong><strong>Identifies, discerns and characterises</strong> salient issues, <strong>determines and analyses</strong> causes and effects, <strong>justifies and applies</strong> appropriate simplifying assumptions, <strong>predicts</strong> performance and behaviour, <strong>synthesises</strong> solution strategies and <strong>develops</strong> substantiated conclusions.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -684,10 +683,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) </strong><strong>Ensures</strong> that all aspects of an engineering activity are soundly based on fundamental principles - by diagnosing, and taking appropriate action with data, calculations, results, proposals, processes, practices, and documented information that may be ill-founded, illogical, erroneous, unreliable or unrealistic.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -703,10 +702,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) </strong><strong>Competently addresses</strong> engineering problems involving uncertainty, ambiguity, imprecise information and wide-ranging and sometimes conflicting technical and non-technical factors.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -722,10 +721,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>d) </strong><strong>Partitions</strong> problems, processes or systems into manageable elements for the purposes of analysis, modelling or design and then <strong>re-combines</strong> to form a whole, with the integrity and performance of the overall system as the paramount consideration.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -741,10 +740,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>e) </strong><strong>Conceptualises</strong> alternative engineering approaches and <strong>evaluates</strong> potential outcomes against appropriate criteria to justify an optimal solution choice.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -760,10 +759,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>f) </strong><strong>Critically reviews and applies</strong> relevant standards and codes of practice underpinning the engineering discipline and nominated specialisations.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -779,10 +778,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>g) </strong><strong>Identifies, quantifies, mitigates and manages</strong> technical, health, environmental, safety and other contextual risks associated with engineering application in the designated engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -798,10 +797,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>h) </strong><strong>Interprets and ensures</strong> compliance with relevant legislative and statutory requirements applicable to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -817,10 +816,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>i) </strong><strong>Investigates</strong> complex problems using research-based knowledge and research methods.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -847,9 +846,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) </strong><strong>Proficiently identifies, selects and applies</strong> the materials, components, devices, systems, processes, resources, plant and equipment relevant to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -866,10 +865,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) </strong><strong>Constructs or selects and applies</strong> from a qualitative description of a phenomenon, process, system, component or device a mathematical, physical or computational model based on fundamental scientific principles and justifiable simplifying assumptions.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -885,10 +884,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) </strong><strong>Determines</strong> properties, performance, safe working limits, failure modes, and other inherent parameters of materials, components and systems relevant to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -904,10 +903,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>d) </strong><strong>Applies</strong> a wide range of engineering tools for analysis, simulation, visualisation, synthesis and design, including assessing the accuracy and limitations of such tools, and validation of their results.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -923,10 +922,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>e) </strong><strong>Applies</strong> formal systems engineering methods to address the planning and execution of complex, problem solving and engineering projects.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -942,10 +941,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>f) </strong><strong>Designs and conducts</strong> experiments, <strong>analyses and interprets</strong> result data and <strong>formulates</strong> reliable conclusions.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -961,10 +960,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>g) </strong><strong>Analyses</strong> sources of error in applied models and experiments; <strong>eliminates, minimises or compensates</strong> for such errors; <strong>quantifies</strong> significance of errors to any conclusions drawn.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -980,10 +979,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>h) </strong><strong>Safely applies</strong> laboratory, test and experimental procedures appropriate to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -999,10 +998,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>i) </strong><strong>Understands</strong> the need for systematic management of the acquisition, commissioning, operation, upgrade, monitoring and maintenance of engineering plant, facilities, equipment and systems.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1018,10 +1017,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>j) </strong><strong>Understands</strong> the role of quality management systems, tools and processes within a culture of continuous improvement.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1048,9 +1047,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) </strong><strong>Proficiently applies</strong> technical knowledge and open ended problem solving skills as well as appropriate tools and resources to design components, elements, systems, plant, facilities and/or processes to satisfy user requirements.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -1067,10 +1066,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) </strong><strong>Addresses</strong> broad contextual constraints such as social, cultural, environmental, commercial, legal political and human factors, as well as health, safety and sustainability imperatives as an integral part of the design process.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1086,10 +1085,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) </strong><strong>Executes and leads</strong> a whole systems design cycle approach including tasks such as: <br>- determining client requirements and identifying the impact of relevant contextual factors, including business planning and costing targets; <br>- systematically addressing sustainability criteria; <br>- working within projected development, production and implementation constraints; <br>- eliciting, scoping and documenting the required outcomes of the design task and defining acceptance criteria; <br>- identifying assessing and managing technical, health and safety risks integral to the design process; <br>- writing engineering specifications, that fully satisfy the formal requirements; <br>- ensuring compliance with essential engineering standards and codes of practice; <br>- partitioning the design task into appropriate modular, functional elements; that can be separately addressed and subsequently integrated through defined interfaces; <br>- identifying and analysing possible design approaches and justifying an optimal approach; <br>- developing and completing the design using appropriate engineering principles, tools, and processes; <br>- integrating functional elements to form a coherent design solution; <br>- quantifying the materials, components, systems, equipment, facilities, engineering resources and operating arrangements needed for implementation of the solution; <br>- checking the design solution for each element and the integrated system against the engineering specifications; <br>- devising and documenting tests that will verify performance of the elements and the integrated realisation; <br>- prototyping/implementing the design solution and verifying performance against specification; <br>- documenting, commissioning and reporting the design outcome.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1105,10 +1104,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>d) </strong><strong>Is aware of</strong> the accountabilities of the professional engineer in relation to the ‘design authority’ role.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1135,9 +1134,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) </strong><strong>Contributes to and/or manages</strong> <i>complex</i> engineering project activity, as a member and/or as leader of an engineering team.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -1154,10 +1153,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) </strong><strong>Seeks out</strong> the requirements and associated resources and <strong>realistically assesses</strong> the scope, dimensions, scale of effort and indicative costs of a <i>complex</i> engineering project.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1173,10 +1172,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) </strong><strong>Accommodates</strong> relevant contextual issues into all phases of engineering project work, including the fundamentals of business planning and financial management.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1192,10 +1191,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>d) </strong><strong>Proficiently applies</strong> basic systems engineering and/or project management tools and processes to the planning and execution of project work, targeting the delivery of a significant outcome to a professional standard.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1211,10 +1210,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>e) </strong><strong>Is aware of</strong> the need to plan and quantify performance over the full life-cycle of a project, managing engineering performance within the overall implementation context.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1230,10 +1229,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>f) </strong><strong>Demonstrates</strong> commitment to sustainable engineering practices and the achievement of sustainable outcomes in all facets of engineering project work.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1260,9 +1259,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) </strong><strong>Demonstrates</strong> commitment to uphold the Engineers Australia - Code of Ethics, and established norms of professional conduct pertinent to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -1279,10 +1278,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) </strong><strong>Understands</strong> the need for ‘due-diligence’ in certification, compliance and risk management processes.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1298,10 +1297,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) </strong><strong>Understands</strong> the accountabilities of the professional engineer and the broader engineering team for the safety of other people and for protection of the environment.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1317,10 +1316,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>d) </strong><strong>Is aware of</strong> the fundamental principles of intellectual property rights and protection.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1347,9 +1346,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) </strong><strong>Is proficient in</strong> listening, speaking, reading and writing English, including: <br>- comprehending critically and fairly the viewpoints of others; <br>- expressing information effectively and succinctly, issuing instruction, engaging in discussion, presenting arguments and justification, debating and negotiating - to technical and non-technical audiences and using textual, diagrammatic, pictorial and graphical media best suited to the context; <br>- representing an engineering position, or the engineering profession at large to the broader community; <br>- appreciating the impact of body language, personal behaviour and other non-verbal communication processes, as well as the fundamentals of human social behaviour and their cross-cultural differences.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -1366,10 +1365,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) </strong><strong>Prepares</strong> high quality engineering documents such as progress and project reports, reports of investigations and feasibility studies, proposals, specifications, design records, drawings, technical descriptions and presentations pertinent to the engineering discipline.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1396,9 +1395,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) </strong><strong>Applies</strong> creative approaches to identify and develop alternative concepts, solutions and procedures, appropriately challenges engineering practices from technical and non-technical viewpoints; identifies new technological opportunities.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -1415,10 +1414,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) </strong><strong>Seeks out</strong> new developments in the engineering discipline and specialisations and <strong>applies</strong> fundamental knowledge and systematic processes to evaluate and report potential.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1434,10 +1433,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) </strong><strong>Is aware of</strong> broader fields of science, engineering, technology and commerce from which new ideas and interfaces may be may drawn and readily <strong>engages</strong> with professionals from these fields to exchange ideas.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1464,9 +1463,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) </strong><strong>Is proficient in</strong> locating and utilising information - including accessing, systematically searching, analysing, evaluating and referencing relevant published works and data; is proficient in the use of indexes, bibliographic databases and other search facilities.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -1483,10 +1482,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) </strong><strong>Critically assesses</strong> the accuracy, reliability and authenticity of information.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1502,10 +1501,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) </strong><strong>Is aware of</strong> common document identification, tracking and control procedures.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1532,9 +1531,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) </strong><strong>Demonstrates</strong> commitment to critical self-review and performance evaluation against appropriate criteria as a primary means of tracking personal development needs and achievements.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -1551,10 +1550,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) </strong><strong>Understands</strong> the importance of being a member of a professional and intellectual community, learning from its knowledge and standards, and contributing to their maintenance and advancement.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1570,10 +1569,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) </strong><strong>Demonstrates</strong> commitment to life-long learning and professional development.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1589,9 +1588,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>d) </strong><strong>Manages</strong> time and processes effectively, <strong>prioritises</strong> competing demands to achieve personal, career and organisational goals and objectives.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -1608,10 +1607,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>e) </strong><strong>Thinks critically and applies</strong> an appropriate balance of logic and intellectual criteria to analysis, judgment and decision making.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1627,10 +1626,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>f) </strong><strong>Presents</strong> a professional image in all circumstances, including relations with clients, stakeholders, as well as with professional and technical colleagues across wide ranging disciplines.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1657,9 +1656,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>a) </strong><strong>Understands</strong> the fundamentals of team dynamics and leadership.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -1676,10 +1675,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>b) </strong><strong>Functions as</strong> an effective member or leader of diverse engineering teams, including those with multilevel, multi-disciplinary and multi-cultural dimensions.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1695,10 +1694,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>c) </strong><strong>Earns</strong> the trust and confidence of colleagues through competent and timely completion of tasks.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1714,9 +1713,9 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>d) </strong><strong>Recognises</strong> the value of alternative and diverse viewpoints, scholarly advice and the importance of professional networking.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox3" id="step4-SLO1-checkbox3" />
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
                                                                         <select id="step4-SLO1-select3" class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
@@ -1733,10 +1732,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>e) </strong><strong>Confidently pursues and discerns</strong> expert assistance and professional advice.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1752,10 +1751,10 @@
                                                                 <div class="col-lg-9">
                                                                     <strong>f) </strong><strong>Takes initiative and fulfils</strong> the leadership role whilst respecting the agreed roles of others.
                                                                 </div>
-                                                                <div class="col-lg-3">
-                                                                    <div class="checkbox-inline">
-                                                                        <input class="checkbox" type="checkbox" name="step4-SLO1-checkbox4" id="step4-SLO1-checkbox4" />
-                                                                        <select id="step4-SLO1-select4" class="right-content-txt-select">
+                                                                <div class="col-lg-3 checkbox-inline">
+                                                                    <div class="step4-input-checkbox">
+                                                                        <input class="checkbox" type="checkbox" />
+                                                                        <select class="right-content-txt-select">
                                                                             <option value ="0">DL1</option>
                                                                             <option value ="1">DL2</option>
                                                                             <option value ="2">DL3</option>
@@ -1768,15 +1767,6 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            
-
-
-
-
-
-
-
-
                                         </div>
                                     </div>
                                     <!-- End Step 4 Right content-->
@@ -1785,8 +1775,23 @@
                         </div>
                         <!-- End Step 4 -->
 
-                        <button id="next" type="button" class="btn btn-success">Next</button>
+                        <!-- Step 5 -->
+                        <div class="page" id="step5">
+                            <h3>Allocation of Assessment Percentage to SLOs</h3>
+                            <p style="padding-bottom: 30px;">Create a row for each piece of assessment in the subject</p>
+                            <div class="step5-slo"></div>
+                            <div id="step5-input">
+                                <div class="table-responsive" >
+                                </div>
+                            </div>
+
+                            <button id="remove" type="button" class="btn btn-success">Remove</button>
+                            <button id="add" type="button" class="btn btn-success">Add</button>
+                        </div>
+                        <!-- End Step 5 -->
+                       
                     </div>
+                    <button id="next" type="button" class="btn btn-success">Next</button>
                 </div>
             </div>
         </div>
@@ -1881,6 +1886,5 @@
                 });
             });
             </script>
-
     </body>
 </html>

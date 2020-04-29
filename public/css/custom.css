@@ -143,6 +143,12 @@ ul{
     width: 100%;
 }
 
+.form-select-large {
+	float: right;
+	width: 100%;
+	height: 25px;
+}
+
 .small-input {
     height: 30px;
 }
