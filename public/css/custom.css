@@ -1,6 +1,6 @@
 /* Write your custom CSS here */
 .page-container{
-    margin: 20px;
+    margin: 70px;
 }
 
 ul{
@@ -131,7 +131,7 @@ ul{
 
 .subtitle{
     font-size:20px; 
-    padding: 0 20px;
+    padding: 10px 40px;
 }
 
 .form-input {
@@ -141,6 +141,12 @@ ul{
 .form-select {
     float: right;
     width: 100%;
+}
+
+.form-select-large {
+	float: right;
+	width: 100%;
+	height: 25px;
 }
 
 .small-input {
@@ -214,4 +220,37 @@ ul{
 .DL-image img{
 	width:100%;
 	height: auto;
+}
+
+.warning-number{
+	color:red;
+}
+
+.small-width-input{
+	width: 40px;
+}
+
+.add-remove{
+	margin-top: 20px;
+	float: right;
+}
+
+.add-remove button{
+	width: 100px;
+	margin-left: 50px;
+}
+
+#next{
+	float: right;
+	margin-top: 50px;
+}
+
+#previous{
+	float: left;
+	margin-top: 50px;
+}
+
+.content{
+	margin-top: 30px;
+	padding: 10px auto;
 }
