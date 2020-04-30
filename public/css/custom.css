@@ -1,6 +1,6 @@
 /* Write your custom CSS here */
 .page-container{
-    margin: 20px;
+    margin: 70px;
 }
 
 ul{
@@ -131,7 +131,7 @@ ul{
 
 .subtitle{
     font-size:20px; 
-    padding: 0 20px;
+    padding: 10px 40px;
 }
 
 .form-input {
@@ -248,4 +248,9 @@ ul{
 #previous{
 	float: left;
 	margin-top: 50px;
+}
+
+.content{
+	margin-top: 30px;
+	padding: 10px auto;
 }

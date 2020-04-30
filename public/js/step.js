@@ -525,9 +525,27 @@ $(document).ready(function() {
         };
     };
 
+    /* Load Step 6 */ 
+    var Load_Step6 = function(){
+            // var xml = '<?xml version="1.0" encoding="utf-8"?>';
+            // xml += '<World xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">';
+            // xml += '</World>';
+            // xml += '<CourseIndex>0</CourseIndex>';
+            // xml += '<SubjectInfo>';
+            // xml += '<SubjectCode>' + SubjectCode + '</SubjectCode>';
+            // xml += '<SubjectName>' + SubjectName + '</SubjectName>';
+            // xml += '<SubjectCoordinator>' + SubjectCoordinator + '</SubjectCoordinator>';
+            // xml += '<SubjectDescription>' + SubjectDescription + '</SubjectDescription>';
+            // xml += '<CreditPoints>' + CreditPoints + '</CreditPoints>';
+            // xml += '<StudyYear>' + StudyYear + '</StudyYear>';
+            // xml += '<TeachingPeriod>' + TeachingPeriod + '</TeachingPeriod>';
+            // xml += '</SubjectInfo>';
+            // $(".map").append(xml)
+    };
+
     Load_Step2();
     console.log("Step 2")
-    var step = 3;
+    var step = 9;
     var step4inner = 0;
     $('#next').on('click', function() {
         switch(true) {
@@ -565,7 +583,7 @@ $(document).ready(function() {
                 break;
             case step == 4 + SLOCount + 1:
                 Store_Step5();
-                // Load_Step6();
+                Load_Step6();
                 console.log("Step 6")
                 break;
             default:
@@ -638,6 +656,5 @@ $(document).ready(function() {
         };
         
     });
-    
     
 });

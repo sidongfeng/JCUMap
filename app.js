@@ -7,6 +7,7 @@ const favicon = require('serve-favicon');
 
 const indexRouter = require('./routes/index');
 const stepRouter = require('./routes/step');
+const testRouter = require('./routes/test');
 const app = express();
 
 
@@ -23,6 +24,7 @@ app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 app.use('/',indexRouter);
 app.use('/step',stepRouter);
+app.use('/test',testRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
