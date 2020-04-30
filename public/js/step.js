@@ -203,6 +203,76 @@ $(document).ready(function() {
         });
     };
 
+    /* Step 5 Function */ 
+    $('#step5-remove').click(function() {
+        if ($(".step5-tbody").find("tr").length>2){
+            $(".step5-tbody").find("tr").eq(-2).remove();
+        };
+        if ($(".step5-tbody").find("tr").length<=2){
+            $("#step5-remove").attr("disabled","true");
+        };
+    });
+
+    $('#step5-add').click(function() {
+        var html = "";
+        var j = $(".step5-tbody").find("tr").length - 1;
+        html += '      <tr>';
+        html += '          <td>';
+        html += '              <input type="text" name="PoaName'+j+'" value="">';
+        html += '          </td>';
+        html += '          <td>';
+        html += '              <select class="form-select-large" id="PoaType'+j+'">';
+        html += '                  <option value ="6.0">6.0</option>';
+        html += '              </select>';
+        html += '          </td>';
+        html += '          <td>';
+        html += '              <input class="small-width-input step5-weight-input" type="text" name="PoaWeight'+j+'" value="0">';
+        html += '           </td>';
+        for (var i=0; i<MappingClassList.length; i++){
+            html += '       <td>';
+            html += '           <input class="small-width-input step5-slo-input" type="text" name="Val'+i+''+j+'" value="0">';
+            html += '       </td>';
+        };
+        html += '           <td class="slo-sum warning-number">0</td>';
+        html += '       </tr>';
+        $(".step5-tbody").find("tr:last").before(html);
+        if ($(".step5-tbody").find("tr").length>2){
+            $("#step5-remove").removeAttr("disabled");
+        };
+        /* 设置每一个weight change */
+        $(".step5-weight-input").each(function(){
+            $(this).bind('input propertychange', function() {
+                var weight_sum = 0;
+                $(".step5-weight-input").each(function(){
+                    weight_sum = weight_sum + parseInt($(this).val());
+                });
+                $(".weight-sum").html(weight_sum);
+                if (weight_sum != 100){
+                    $(".weight-sum").addClass("warning-number");
+                }else{
+                    $(".weight-sum").removeClass("warning-number");
+                };
+            });
+        });
+
+        /* 设置每一个slo change */
+        $(".step5-slo-input").each(function(){
+            $(this).bind('input propertychange', function() {
+                var slo_sum = parseInt($(this).val());
+                $(this).parent().siblings().find(".step5-slo-input").each(function(){
+                    slo_sum = slo_sum + parseInt($(this).val());
+                });
+                $(this).parent().siblings(".slo-sum").html(slo_sum);
+                if (slo_sum != 100){
+                    $(this).parent().siblings(".slo-sum").addClass("warning-number");
+                }else{
+                    $(this).parent().siblings(".slo-sum").removeClass("warning-number");
+                };
+            });
+        });
+    });
+
+
 
     /* Load Step 2 */ 
     var Load_Step2 = function(){
@@ -331,6 +401,8 @@ $(document).ready(function() {
         };
         $(".step5-slo").append(html);
         var html = '';
+        var weight_sum_init = 0;
+        var slo_sum_init = 0;
         html += '<table class="table">';
         html += '   <thead>';
         html += '       <tr>';
@@ -348,8 +420,10 @@ $(document).ready(function() {
         html += '           <th></th>';
         html += '       </tr>';
         html += '   </thead>';
-        html += '   <tbody>';
+        html += '   <tbody class="step5-tbody">';
         for (var j=0; j<PieceOfAssessmentList.length; j++){
+            weight_sum_init += parseInt(PieceOfAssessmentList[j]['PoaWeight']);
+            slo_sum_init = 0;
             html += '      <tr>';
             html += '          <td>';
             html += '              <input type="text" name="PoaName'+j+'" value="'+PieceOfAssessmentList[j]['PoaName']+'">';
@@ -360,19 +434,72 @@ $(document).ready(function() {
             html += '              </select>';
             html += '          </td>';
             html += '          <td>';
-            html += '              <input type="text" name="PoaWeight'+j+'" value="'+PieceOfAssessmentList[j]['PoaWeight']+'">';
+            html += '              <input class="small-width-input step5-weight-input" type="text" name="PoaWeight'+j+'" value="'+PieceOfAssessmentList[j]['PoaWeight']+'">';
             html += '           </td>';
             for (var i=0; i<MappingClassList.length; i++){
+                slo_sum_init += PieceOfAssessmentList[j]['PoaBreakdown'][i];
                 html += '       <td>';
-                html += '           <input type="text" name="Val'+i+''+j+'" value="'+PieceOfAssessmentList[j]['PoaBreakdown'][i]+'">';
+                html += '           <input class="small-width-input step5-slo-input" type="text" name="Val'+i+''+j+'" value="'+PieceOfAssessmentList[j]['PoaBreakdown'][i]+'">';
                 html += '       </td>';
             };
-            html += '           <td>100</td>';
+            if (slo_sum_init != 100){
+                html += '           <td class="slo-sum warning-number">'+slo_sum_init+'</td>';
+            }else{
+                html += '           <td class="slo-sum">'+slo_sum_init+'</td>';
+            }
             html += '       </tr>';
         };
+        html += '       <tr>';
+        html += '          <td></td>';
+        html += '          <td></td>';
+        if (weight_sum_init != 100){
+            html += '           <td class="weight-sum warning-number">'+weight_sum_init+'</td>';
+        }else{
+            html += '           <td class="weight-sum">'+weight_sum_init+'</td>';
+        }
+        html += '       </tr>';
         html += '   <tbody>';
         html += '</table>';
         $(".table-responsive").append(html);
+        if ($(".step5-tbody").find("tr").length<=2){
+            $("#step5-remove").attr("disabled","true");
+        };
+
+        /* 设置每一个weight change */
+        $(".step5-weight-input").each(function(){
+            $(this).bind('input propertychange', function() {
+                var weight_sum = 0;
+                $(".step5-weight-input").each(function(){
+                    weight_sum = weight_sum + parseInt($(this).val());
+                });
+                $(".weight-sum").html(weight_sum);
+                if (weight_sum != 100){
+                    $(".weight-sum").addClass("warning-number");
+                }else{
+                    $(".weight-sum").removeClass("warning-number");
+                };
+            });
+        });
+
+        /* 设置每一个slo change */
+        $(".step5-slo-input").each(function(){
+            $(this).bind('input propertychange', function() {
+                var slo_sum = parseInt($(this).val());
+                $(this).parent().siblings().find(".step5-slo-input").each(function(){
+                    slo_sum = slo_sum + parseInt($(this).val());
+                });
+                $(this).parent().siblings(".slo-sum").html(slo_sum);
+                if (slo_sum != 100){
+                    $(this).parent().siblings(".slo-sum").addClass("warning-number");
+                }else{
+                    $(this).parent().siblings(".slo-sum").removeClass("warning-number");
+                };
+            });
+        });
+    };
+
+    /* Store Step 5 */ 
+    var Store_Step5 = function(){
         
     };
 
@@ -411,6 +538,11 @@ $(document).ready(function() {
                 // Store_Step4(step4inner-1);
                 Load_Step5();
                 console.log("Step 5")
+                break;
+            case step == 4 + SLOCount + 1:
+                Store_Step5();
+                // Load_Step6();
+                console.log("Step 6")
                 break;
             default:
                 console.log("error")

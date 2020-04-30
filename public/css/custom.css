@@ -221,3 +221,11 @@ ul{
 	width:100%;
 	height: auto;
 }
+
+.warning-number{
+	color:red;
+}
+
+.small-width-input{
+	width: 40px;
+}
