@@ -399,6 +399,7 @@ $(document).ready(function() {
             html += '       <p>'+SubjectLearningOutcome+'</p>';
             html += '   </div>';
         };
+        $(".step5-slo").empty();
         $(".step5-slo").append(html);
         var html = '';
         var weight_sum_init = 0;
@@ -457,9 +458,14 @@ $(document).ready(function() {
         }else{
             html += '           <td class="weight-sum">'+weight_sum_init+'</td>';
         }
+        for (var i=0; i<MappingClassList.length; i++){
+            html += '          <td></td>';
+        };
+        html += '          <td></td>';
         html += '       </tr>';
         html += '   <tbody>';
         html += '</table>';
+        $(".table-responsive").empty();
         $(".table-responsive").append(html);
         if ($(".step5-tbody").find("tr").length<=2){
             $("#step5-remove").attr("disabled","true");
@@ -500,10 +506,28 @@ $(document).ready(function() {
 
     /* Store Step 5 */ 
     var Store_Step5 = function(){
-        
+        for (var i=0; i< $(".step5-tbody tr:not(:last)").length; i++){
+            var row =  $(".step5-tbody tr:not(:last)").eq(i);
+            var PoaName = row.find("td").eq(0).find("input").val();
+            var PoaType = row.find("td").eq(1).find('select').get(0).selectedIndex;
+            var PoaWeight = row.find("td").eq(2).find('input').val();
+            var PoaBreakdown = new Array(7).fill(0);
+            for (var j=3; j<row.find("td").length-1; j++){
+                PoaBreakdown[j-3] = parseInt(row.find("td").eq(j).find('input').val());
+            };
+            var Piece = {
+                "PoaName": PoaName,
+                "PoaType": PoaType,
+                "PoaWeight": PoaWeight,
+                "PoaBreakdown": PoaBreakdown
+            };
+            PieceOfAssessmentList[i] = Piece;
+        };
     };
 
-    var step = 9;
+    Load_Step2();
+    console.log("Step 2")
+    var step = 3;
     var step4inner = 0;
     $('#next').on('click', function() {
         switch(true) {
@@ -550,14 +574,69 @@ $(document).ready(function() {
         if (step >= 4 && step < 4 + SLOCount){
             $(".page").siblings().addClass("hide");
             $("#step4").removeClass("hide");
+            $(".intro-list").siblings().removeClass("intro-list-active").eq(3).addClass("intro-list-active");
         }else if (step >= 4 + SLOCount){
             $(".page").siblings().addClass("hide");
             $("#step"+(step-SLOCount+1)).removeClass("hide");
+            $(".intro-list").siblings().removeClass("intro-list-active").eq(step-SLOCount).addClass("intro-list-active");
         }else{
             $(".page").siblings().addClass("hide");
             $("#step"+step).removeClass("hide");
-        }
+            $(".intro-list").siblings().removeClass("intro-list-active").eq(step-1).addClass("intro-list-active");
+        };
         step ++;
+    });
+
+    $('#previous').on('click', function() {
+        step --;
+        switch(true) {
+            case step == 0:
+                console.log("error")
+                break;
+            case step == 1:
+                console.log("error")
+                break;
+            case step == 2:
+                window.location.href = "/"
+                break;
+            case step == 3:
+                Load_Step2();
+                console.log("Step 2")
+                break;
+            case step == 4:
+                Load_Step3();
+                console.log("Step 3")
+                break;
+            case step >= 5 && step < 4 + SLOCount:
+                step4inner--;
+                Load_Step4(step4inner-1);
+                console.log("Step 4-"+(step4inner-1));
+                break;
+            case step == 4 + SLOCount:
+                Load_Step5();
+                console.log("Step 4-4")
+                break;
+            case step == 4 + SLOCount + 1:
+                Load_Step5();
+                console.log("Step 5")
+                break;
+            default:
+                console.log("error")
+        };
+        if (step >= 5 && step < 5 + SLOCount){
+            $(".page").siblings().addClass("hide");
+            $("#step4").removeClass("hide");
+            $(".intro-list").siblings().removeClass("intro-list-active").eq(3).addClass("intro-list-active");
+        }else if (step >= 4 + SLOCount){
+            $(".page").siblings().addClass("hide");
+            $("#step"+(step-SLOCount)).removeClass("hide");
+            $(".intro-list").siblings().removeClass("intro-list-active").eq(step-SLOCount-1).addClass("intro-list-active");
+        }else{
+            $(".page").siblings().addClass("hide");
+            $("#step"+(step-1)).removeClass("hide");
+            $(".intro-list").siblings().removeClass("intro-list-active").eq(step-2).addClass("intro-list-active");
+        };
+        
     });
     
     

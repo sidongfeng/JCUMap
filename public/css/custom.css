@@ -229,3 +229,23 @@ ul{
 .small-width-input{
 	width: 40px;
 }
+
+.add-remove{
+	margin-top: 20px;
+	float: right;
+}
+
+.add-remove button{
+	width: 100px;
+	margin-left: 50px;
+}
+
+#next{
+	float: right;
+	margin-top: 50px;
+}
+
+#previous{
+	float: left;
+	margin-top: 50px;
+}
