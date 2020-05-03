@@ -122,7 +122,7 @@ ul{
 
 .page h3{
     height:50px; 
-    font-size:30px; 
+    font-size:20px; 
     border-bottom:1px dotted #ccc; 
     margin-bottom:20px; 
     padding-bottom:5px;
@@ -175,6 +175,7 @@ ul{
 	padding:0 0 0 18px; 
 	position:relative;
 	font-weight: bold;
+	font-size: 12px;
 }
 .left-content-title i{
 	position:absolute; 
@@ -253,4 +254,18 @@ ul{
 .content{
 	margin-top: 30px;
 	padding: 10px auto;
+}
+
+.filename{
+	float: left;
+	margin-top: 5px;
+}
+
+.submit{
+	float: left;
+	margin-left: -80px;
+}
+
+.large-row{
+	height: 150px;
 }

@@ -1,0 +1,2919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<World xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CourseIndex>0</CourseIndex>
+  <SubjectInfo>
+    <SubjectCode>COMP4130</SubjectCode>
+    <SubjectName>Managing Software Process and Quality</SubjectName>
+    <SubjectCoordinator>Zhenchang Xing</SubjectCoordinator>
+    <SubjectDescription>This courses will teach the students how to successfully guide the development of a software product from inception to delivery. The students will learn techniques for monitoring sofotware products to ensure they align to client needs, adhere to project plans, and achieve a desired level of quality.</SubjectDescription>
+    <CreditPoints>6</CreditPoints>
+    <StudyYear>3</StudyYear>
+    <TeachingPeriod>0</TeachingPeriod>
+  </SubjectInfo>
+  <SLOCount>5</SLOCount>
+  <SLOsAndMapping>
+    <MappingClass>
+      <SubjectLearningOutcome>Evaluate various quality factors of software artefacts that are typically produced in software engineering lifecycle</SubjectLearningOutcome>
+      <PrimaryMapping>
+        <Prefix>BaEng</Prefix>
+        <DescriptionText>Engineers Australia Stage 1 Competency Standard</DescriptionText>
+        <ChildCompetencies>
+          <Prefix>1.</Prefix>
+          <DescriptionText>KNOWLEDGE AND SKILL BASE</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>1.1</Prefix>
+            <DescriptionText>[b]Comprehensive, theory based understanding[/b] of the underpinning natural and physical sciences and the engineering fundamentals applicable to the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Engages[/b] with the engineering discipline at a phenomenological level, applying sciences and engineering fundamentals to systematic investigation, interpretation, analysis and innovative solution of complex problems and broader aspects of engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.2</Prefix>
+            <DescriptionText>[b]Conceptual understanding[/b] of the, mathematics, numerical analysis, statistics, and computer and information sciences which underpin the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Develops and fluently applies[/b] relevant investigation analysis, interpretation, assessment, characterisation, prediction, evaluation, modelling, decision making, measurement, evaluation, knowledge management and communication tools and techniques pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.3</Prefix>
+            <DescriptionText>[b]In depth understanding[/b] of specialist bodies of knowledge within the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] advanced technical knowledge and skills in at least one specialist practice domain of the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.4</Prefix>
+            <DescriptionText>[b]Discernment[/b] of knowledge development and research directions within the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies and critically appraises[/b] current developments, advanced technologies, emerging issues and interdisciplinary linkages in at least one specialist practice domain of the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Interprets and applies[/b] selected research literature to inform engineering application in at least one specialist domain of the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.5</Prefix>
+            <DescriptionText>[b]Knowledge[/b] of contextual factors impacting the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies and understands[/b] the interactions between engineering systems and people in the social, cultural, environmental, commercial, legal and political contexts in which they operate, including both the positive role of engineering in sustainable development and the potentially adverse impacts of engineering activity in the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the founding principles of human factors relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the fundamentals of business and enterprise management.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Identifies[/b] the structure, roles and capabilities of the engineering workforce.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the issues associated with international engineering practice and global operating contexts.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.6</Prefix>
+            <DescriptionText>[b]Understanding[/b] of the scope, principles, norms, accountabilities and bounds of contemporary engineering practice in the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Applies[/b] systematic principles of engineering design relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the basis and relevance of standards and codes of practice, as well as legislative and statutory requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the principles of safety engineering, risk management and the health and safety responsibilities of the professional engineer, including legislative requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the social, environmental and economic principles of sustainable engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Understands[/b] the fundamental principles of engineering project management as a basis for planning, organising and managing resources.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the formal structures and methodologies of systems engineering as a holistic basis for managing complexity and sustainability in engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <ChildCompetencies>
+          <Prefix>2.</Prefix>
+          <DescriptionText>ENGINEERING APPLICATION ABILITY</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>2.1</Prefix>
+            <DescriptionText>[b]Application[/b] of established engineering methods to complex engineering problem solving.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies, discerns and characterises[/b] salient issues, [b]determines and analyses[/b] causes and effects, [b]justifies and applies[/b] appropriate simplifying assumptions, [b]predicts[/b] performance and behaviour, [b]synthesises[/b] solution strategies and [b]develops[/b] substantiated conclusions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Ensures[/b] that all aspects of an engineering activity are soundly based on fundamental principles - by diagnosing, and taking appropriate action with data, calculations, results, proposals, processes, practices, and documented information that may be ill-founded, illogical, erroneous, unreliable or unrealistic.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Competently addresses[/b] engineering problems involving uncertainty, ambiguity, imprecise information and wide-ranging and sometimes conflicting technical and non-technical factors.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Partitions[/b] problems, processes or systems into manageable elements for the purposes of analysis, modelling or design and then [b]re-combines[/b] to form a whole, with the integrity and performance of the overall system as the paramount consideration.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Conceptualises[/b] alternative engineering approaches and [b]evaluates[/b] potential outcomes against appropriate criteria to justify an optimal solution choice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Critically reviews and applies[/b] relevant standards and codes of practice underpinning the engineering discipline and nominated specialisations.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>g)</Prefix>
+              <DescriptionText>[b]Identifies, quantifies, mitigates and manages[/b] technical, health, environmental, safety and other contextual risks associated with engineering application in the designated engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>h)</Prefix>
+              <DescriptionText>[b]Interprets and ensures[/b] compliance with relevant legislative and statutory requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>i)</Prefix>
+              <DescriptionText>[b]Investigates[/b] complex problems using research-based knowledge and research methods.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.2</Prefix>
+            <DescriptionText>[b]Fluent application[/b] of engineering techniques, tools and resources.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently identifies, selects and applies[/b] the materials, components, devices, systems, processes, resources, plant and equipment relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Constructs or selects and applies[/b] from a qualitative description of a phenomenon, process, system, component or device a mathematical, physical or computational model based on fundamental scientific principles and justifiable simplifying assumptions.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Determines[/b] properties, performance, safe working limits, failure modes, and other inherent parameters of materials, components and systems relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Applies[/b] a wide range of engineering tools for analysis, simulation, visualisation, synthesis and design, including assessing the accuracy and limitations of such tools, and validation of their results.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Applies[/b] formal systems engineering methods to address the planning and execution of complex, problem solving and engineering projects.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Designs and conducts[/b] experiments, [b]analyses and interprets[/b] result data and [b]formulates[/b] reliable conclusions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>g)</Prefix>
+              <DescriptionText>[b]Analyses[/b] sources of error in applied models and experiments; [b]eliminates, minimises or compensates[/b] for such errors; [b]quantifies[/b] significance of errors to any conclusions drawn.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>h)</Prefix>
+              <DescriptionText>[b]Safely applies[/b] laboratory, test and experimental procedures appropriate to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>i)</Prefix>
+              <DescriptionText>[b]Understands[/b] the need for systematic management of the acquisition, commissioning, operation, upgrade, monitoring and maintenance of engineering plant, facilities, equipment and systems.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>j)</Prefix>
+              <DescriptionText>[b]Understands[/b] the role of quality management systems, tools and processes within a culture of continuous improvement.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.3</Prefix>
+            <DescriptionText>[b]Application[/b] of systematic engineering synthesis and design processes.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] technical knowledge and open ended problem solving skills as well as appropriate tools and resources to design components, elements, systems, plant, facilities and/or processes to satisfy user requirements.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Addresses[/b] broad contextual constraints such as social, cultural, environmental, commercial, legal political and human factors, as well as health, safety and sustainability imperatives as an integral part of the design process.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Executes and leads[/b] a whole systems design cycle approach including tasks such as: \r\n- determining client requirements and identifying the impact of relevant contextual factors, including business planning and costing targets; \r\n- systematically addressing sustainability criteria; \r\n- working within projected development, production and implementation constraints; \r\n- eliciting, scoping and documenting the required outcomes of the design task and defining acceptance criteria; \r\n- identifying assessing and managing technical, health and safety risks integral to the design process; \r\n- writing engineering specifications, that fully satisfy the formal requirements; \r\n- ensuring compliance with essential engineering standards and codes of practice; \r\n- partitioning the design task into appropriate modular, functional elements; that can be separately addressed and subsequently integrated through defined interfaces; \r\n- identifying and analysing possible design approaches and justifying an optimal approach; \r\n- developing and completing the design using appropriate engineering principles, tools, and processes; \r\n- integrating functional elements to form a coherent design solution; \r\n- quantifying the materials, components, systems, equipment, facilities, engineering resources and operating arrangements needed for implementation of the solution; \r\n- checking the design solution for each element and the integrated system against the engineering specifications; \r\n- devising and documenting tests that will verify performance of the elements and the integrated realisation; \r\n- prototyping/implementing the design solution and verifying performance against specification; \r\n- documenting, commissioning and reporting the design outcome.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the accountabilities of the professional engineer in relation to the ‘design authority’ role.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.4</Prefix>
+            <DescriptionText>[b]Application[/b] of systematic approaches to the conduct and management of engineering projects.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Contributes to and/or manages[/b] [i]complex[/i] engineering project activity, as a member and/or as leader of an engineering team.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Seeks out[/b] the requirements and associated resources and [b]realistically assesses[/b] the scope, dimensions, scale of effort and indicative costs of a [i]complex[/i] engineering project.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Accommodates[/b] relevant contextual issues into all phases of engineering project work, including the fundamentals of business planning and financial management.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] basic systems engineering and/or project management tools and processes to the planning and execution of project work, targeting the delivery of a significant outcome to a professional standard.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the need to plan and quantify performance over the full life-cycle of a project, managing engineering performance within the overall implementation context.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to sustainable engineering practices and the achievement of sustainable outcomes in all facets of engineering project work.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <ChildCompetencies>
+          <Prefix>3.</Prefix>
+          <DescriptionText>PROFESSIONAL AND PERSONAL ATTRIBUTES</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>3.1</Prefix>
+            <DescriptionText>Ethical conduct and professional accountability.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to uphold the Engineers Australia - Code of Ethics, and established norms of professional conduct pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Understands[/b] the need for ‘due-diligence’ in certification, compliance and risk management processes.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Understands[/b] the accountabilities of the professional engineer and the broader engineering team for the safety of other people and for protection of the environment.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the fundamental principles of intellectual property rights and protection.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.2</Prefix>
+            <DescriptionText>Effective oral and written communication in professional and lay domains.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Is proficient in[/b] listening, speaking, reading and writing English, including: \r\n- comprehending critically and fairly the viewpoints of others; \r\n- expressing information effectively and succinctly, issuing instruction, engaging in discussion, presenting arguments and justification, debating and negotiating - to technical and non-technical audiences and using textual, diagrammatic, pictorial and graphical media best suited to the context; \r\n- representing an engineering position, or the engineering profession at large to the broader community; \r\n- appreciating the impact of body language, personal behaviour and other non-verbal communication processes, as well as the fundamentals of human social behaviour and their cross-cultural differences.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Prepares[/b] high quality engineering documents such as progress and project reports, reports of investigations and feasibility studies, proposals, specifications, design records, drawings, technical descriptions and presentations pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.3</Prefix>
+            <DescriptionText>Creative, innovative and pro-active demeanour.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Applies[/b] creative approaches to identify and develop alternative concepts, solutions and procedures, appropriately challenges engineering practices from technical and non-technical viewpoints; identifies new technological opportunities.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Seeks out[/b] new developments in the engineering discipline and specialisations and [b]applies[/b] fundamental knowledge and systematic processes to evaluate and report potential.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] broader fields of science, engineering, technology and commerce from which new ideas and interfaces may be may drawn and readily [b]engages[/b] with professionals from these fields to exchange ideas.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.4</Prefix>
+            <DescriptionText>Professional use and management of information.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Is proficient in[/b] locating and utilising information - including accessing, systematically searching, analysing, evaluating and referencing relevant published works and data; is proficient in the use of indexes, bibliographic databases and other search facilities.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Critically assesses[/b] the accuracy, reliability and authenticity of information.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] common document identification, tracking and control procedures.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.5</Prefix>
+            <DescriptionText>Orderly management of self, and professional conduct.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to critical self-review and performance evaluation against appropriate criteria as a primary means of tracking personal development needs and achievements.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Understands[/b] the importance of being a member of a professional and intellectual community, learning from its knowledge and standards, and contributing to their maintenance and advancement.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to life-long learning and professional development.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Manages[/b] time and processes effectively, [b]prioritises[/b] competing demands to achieve personal, career and organisational goals and objectives.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Thinks critically and applies[/b] an appropriate balance of logic and intellectual criteria to analysis, judgment and decision making.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Presents[/b] a professional image in all circumstances, including relations with clients, stakeholders, as well as with professional and technical colleagues across wide ranging disciplines.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.6</Prefix>
+            <DescriptionText>Effective team membership and team leadership.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Understands[/b] the fundamentals of team dynamics and leadership.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Functions as[/b] an effective member or leader of diverse engineering teams, including those with multilevel, multi-disciplinary and multi-cultural dimensions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Earns[/b] the trust and confidence of colleagues through competent and timely completion of tasks.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Recognises[/b] the value of alternative and diverse viewpoints, scholarly advice and the importance of professional networking.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Confidently pursues and discerns[/b] expert assistance and professional advice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Takes initiative and fulfils[/b] the leadership role whilst respecting the agreed roles of others.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <IsTicked>true</IsTicked>
+        <DL>1</DL>
+      </PrimaryMapping>
+      <FractionOfSubject>15.9</FractionOfSubject>
+      <AssessmentCatBreakdown>
+        <item>
+          <key>
+            <int>18</int>
+          </key>
+          <value>
+            <double>1.5</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>15</int>
+          </key>
+          <value>
+            <double>8.4</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>7</int>
+          </key>
+          <value>
+            <double>1</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>0</int>
+          </key>
+          <value>
+            <double>5</double>
+          </value>
+        </item>
+      </AssessmentCatBreakdown>
+    </MappingClass>
+    <MappingClass>
+      <SubjectLearningOutcome>Synthesize the best-fit software process models and practices for a software engineering project</SubjectLearningOutcome>
+      <PrimaryMapping>
+        <Prefix>BaEng</Prefix>
+        <DescriptionText>Engineers Australia Stage 1 Competency Standard</DescriptionText>
+        <ChildCompetencies>
+          <Prefix>1.</Prefix>
+          <DescriptionText>KNOWLEDGE AND SKILL BASE</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>1.1</Prefix>
+            <DescriptionText>[b]Comprehensive, theory based understanding[/b] of the underpinning natural and physical sciences and the engineering fundamentals applicable to the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Engages[/b] with the engineering discipline at a phenomenological level, applying sciences and engineering fundamentals to systematic investigation, interpretation, analysis and innovative solution of complex problems and broader aspects of engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.2</Prefix>
+            <DescriptionText>[b]Conceptual understanding[/b] of the, mathematics, numerical analysis, statistics, and computer and information sciences which underpin the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Develops and fluently applies[/b] relevant investigation analysis, interpretation, assessment, characterisation, prediction, evaluation, modelling, decision making, measurement, evaluation, knowledge management and communication tools and techniques pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.3</Prefix>
+            <DescriptionText>[b]In depth understanding[/b] of specialist bodies of knowledge within the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] advanced technical knowledge and skills in at least one specialist practice domain of the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.4</Prefix>
+            <DescriptionText>[b]Discernment[/b] of knowledge development and research directions within the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies and critically appraises[/b] current developments, advanced technologies, emerging issues and interdisciplinary linkages in at least one specialist practice domain of the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Interprets and applies[/b] selected research literature to inform engineering application in at least one specialist domain of the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.5</Prefix>
+            <DescriptionText>[b]Knowledge[/b] of contextual factors impacting the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies and understands[/b] the interactions between engineering systems and people in the social, cultural, environmental, commercial, legal and political contexts in which they operate, including both the positive role of engineering in sustainable development and the potentially adverse impacts of engineering activity in the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the founding principles of human factors relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the fundamentals of business and enterprise management.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Identifies[/b] the structure, roles and capabilities of the engineering workforce.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the issues associated with international engineering practice and global operating contexts.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.6</Prefix>
+            <DescriptionText>[b]Understanding[/b] of the scope, principles, norms, accountabilities and bounds of contemporary engineering practice in the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Applies[/b] systematic principles of engineering design relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the basis and relevance of standards and codes of practice, as well as legislative and statutory requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the principles of safety engineering, risk management and the health and safety responsibilities of the professional engineer, including legislative requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the social, environmental and economic principles of sustainable engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Understands[/b] the fundamental principles of engineering project management as a basis for planning, organising and managing resources.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the formal structures and methodologies of systems engineering as a holistic basis for managing complexity and sustainability in engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <ChildCompetencies>
+          <Prefix>2.</Prefix>
+          <DescriptionText>ENGINEERING APPLICATION ABILITY</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>2.1</Prefix>
+            <DescriptionText>[b]Application[/b] of established engineering methods to complex engineering problem solving.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies, discerns and characterises[/b] salient issues, [b]determines and analyses[/b] causes and effects, [b]justifies and applies[/b] appropriate simplifying assumptions, [b]predicts[/b] performance and behaviour, [b]synthesises[/b] solution strategies and [b]develops[/b] substantiated conclusions.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Ensures[/b] that all aspects of an engineering activity are soundly based on fundamental principles - by diagnosing, and taking appropriate action with data, calculations, results, proposals, processes, practices, and documented information that may be ill-founded, illogical, erroneous, unreliable or unrealistic.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Competently addresses[/b] engineering problems involving uncertainty, ambiguity, imprecise information and wide-ranging and sometimes conflicting technical and non-technical factors.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Partitions[/b] problems, processes or systems into manageable elements for the purposes of analysis, modelling or design and then [b]re-combines[/b] to form a whole, with the integrity and performance of the overall system as the paramount consideration.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Conceptualises[/b] alternative engineering approaches and [b]evaluates[/b] potential outcomes against appropriate criteria to justify an optimal solution choice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Critically reviews and applies[/b] relevant standards and codes of practice underpinning the engineering discipline and nominated specialisations.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>g)</Prefix>
+              <DescriptionText>[b]Identifies, quantifies, mitigates and manages[/b] technical, health, environmental, safety and other contextual risks associated with engineering application in the designated engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>h)</Prefix>
+              <DescriptionText>[b]Interprets and ensures[/b] compliance with relevant legislative and statutory requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>i)</Prefix>
+              <DescriptionText>[b]Investigates[/b] complex problems using research-based knowledge and research methods.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.2</Prefix>
+            <DescriptionText>[b]Fluent application[/b] of engineering techniques, tools and resources.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently identifies, selects and applies[/b] the materials, components, devices, systems, processes, resources, plant and equipment relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Constructs or selects and applies[/b] from a qualitative description of a phenomenon, process, system, component or device a mathematical, physical or computational model based on fundamental scientific principles and justifiable simplifying assumptions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Determines[/b] properties, performance, safe working limits, failure modes, and other inherent parameters of materials, components and systems relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Applies[/b] a wide range of engineering tools for analysis, simulation, visualisation, synthesis and design, including assessing the accuracy and limitations of such tools, and validation of their results.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Applies[/b] formal systems engineering methods to address the planning and execution of complex, problem solving and engineering projects.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Designs and conducts[/b] experiments, [b]analyses and interprets[/b] result data and [b]formulates[/b] reliable conclusions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>g)</Prefix>
+              <DescriptionText>[b]Analyses[/b] sources of error in applied models and experiments; [b]eliminates, minimises or compensates[/b] for such errors; [b]quantifies[/b] significance of errors to any conclusions drawn.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>h)</Prefix>
+              <DescriptionText>[b]Safely applies[/b] laboratory, test and experimental procedures appropriate to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>i)</Prefix>
+              <DescriptionText>[b]Understands[/b] the need for systematic management of the acquisition, commissioning, operation, upgrade, monitoring and maintenance of engineering plant, facilities, equipment and systems.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>j)</Prefix>
+              <DescriptionText>[b]Understands[/b] the role of quality management systems, tools and processes within a culture of continuous improvement.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.3</Prefix>
+            <DescriptionText>[b]Application[/b] of systematic engineering synthesis and design processes.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] technical knowledge and open ended problem solving skills as well as appropriate tools and resources to design components, elements, systems, plant, facilities and/or processes to satisfy user requirements.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Addresses[/b] broad contextual constraints such as social, cultural, environmental, commercial, legal political and human factors, as well as health, safety and sustainability imperatives as an integral part of the design process.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Executes and leads[/b] a whole systems design cycle approach including tasks such as: \r\n- determining client requirements and identifying the impact of relevant contextual factors, including business planning and costing targets; \r\n- systematically addressing sustainability criteria; \r\n- working within projected development, production and implementation constraints; \r\n- eliciting, scoping and documenting the required outcomes of the design task and defining acceptance criteria; \r\n- identifying assessing and managing technical, health and safety risks integral to the design process; \r\n- writing engineering specifications, that fully satisfy the formal requirements; \r\n- ensuring compliance with essential engineering standards and codes of practice; \r\n- partitioning the design task into appropriate modular, functional elements; that can be separately addressed and subsequently integrated through defined interfaces; \r\n- identifying and analysing possible design approaches and justifying an optimal approach; \r\n- developing and completing the design using appropriate engineering principles, tools, and processes; \r\n- integrating functional elements to form a coherent design solution; \r\n- quantifying the materials, components, systems, equipment, facilities, engineering resources and operating arrangements needed for implementation of the solution; \r\n- checking the design solution for each element and the integrated system against the engineering specifications; \r\n- devising and documenting tests that will verify performance of the elements and the integrated realisation; \r\n- prototyping/implementing the design solution and verifying performance against specification; \r\n- documenting, commissioning and reporting the design outcome.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the accountabilities of the professional engineer in relation to the ‘design authority’ role.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.4</Prefix>
+            <DescriptionText>[b]Application[/b] of systematic approaches to the conduct and management of engineering projects.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Contributes to and/or manages[/b] [i]complex[/i] engineering project activity, as a member and/or as leader of an engineering team.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Seeks out[/b] the requirements and associated resources and [b]realistically assesses[/b] the scope, dimensions, scale of effort and indicative costs of a [i]complex[/i] engineering project.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Accommodates[/b] relevant contextual issues into all phases of engineering project work, including the fundamentals of business planning and financial management.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] basic systems engineering and/or project management tools and processes to the planning and execution of project work, targeting the delivery of a significant outcome to a professional standard.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the need to plan and quantify performance over the full life-cycle of a project, managing engineering performance within the overall implementation context.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to sustainable engineering practices and the achievement of sustainable outcomes in all facets of engineering project work.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <ChildCompetencies>
+          <Prefix>3.</Prefix>
+          <DescriptionText>PROFESSIONAL AND PERSONAL ATTRIBUTES</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>3.1</Prefix>
+            <DescriptionText>Ethical conduct and professional accountability.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to uphold the Engineers Australia - Code of Ethics, and established norms of professional conduct pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Understands[/b] the need for ‘due-diligence’ in certification, compliance and risk management processes.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Understands[/b] the accountabilities of the professional engineer and the broader engineering team for the safety of other people and for protection of the environment.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the fundamental principles of intellectual property rights and protection.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.2</Prefix>
+            <DescriptionText>Effective oral and written communication in professional and lay domains.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Is proficient in[/b] listening, speaking, reading and writing English, including: \r\n- comprehending critically and fairly the viewpoints of others; \r\n- expressing information effectively and succinctly, issuing instruction, engaging in discussion, presenting arguments and justification, debating and negotiating - to technical and non-technical audiences and using textual, diagrammatic, pictorial and graphical media best suited to the context; \r\n- representing an engineering position, or the engineering profession at large to the broader community; \r\n- appreciating the impact of body language, personal behaviour and other non-verbal communication processes, as well as the fundamentals of human social behaviour and their cross-cultural differences.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Prepares[/b] high quality engineering documents such as progress and project reports, reports of investigations and feasibility studies, proposals, specifications, design records, drawings, technical descriptions and presentations pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.3</Prefix>
+            <DescriptionText>Creative, innovative and pro-active demeanour.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Applies[/b] creative approaches to identify and develop alternative concepts, solutions and procedures, appropriately challenges engineering practices from technical and non-technical viewpoints; identifies new technological opportunities.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Seeks out[/b] new developments in the engineering discipline and specialisations and [b]applies[/b] fundamental knowledge and systematic processes to evaluate and report potential.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] broader fields of science, engineering, technology and commerce from which new ideas and interfaces may be may drawn and readily [b]engages[/b] with professionals from these fields to exchange ideas.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.4</Prefix>
+            <DescriptionText>Professional use and management of information.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Is proficient in[/b] locating and utilising information - including accessing, systematically searching, analysing, evaluating and referencing relevant published works and data; is proficient in the use of indexes, bibliographic databases and other search facilities.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Critically assesses[/b] the accuracy, reliability and authenticity of information.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] common document identification, tracking and control procedures.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.5</Prefix>
+            <DescriptionText>Orderly management of self, and professional conduct.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to critical self-review and performance evaluation against appropriate criteria as a primary means of tracking personal development needs and achievements.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Understands[/b] the importance of being a member of a professional and intellectual community, learning from its knowledge and standards, and contributing to their maintenance and advancement.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to life-long learning and professional development.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Manages[/b] time and processes effectively, [b]prioritises[/b] competing demands to achieve personal, career and organisational goals and objectives.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Thinks critically and applies[/b] an appropriate balance of logic and intellectual criteria to analysis, judgment and decision making.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Presents[/b] a professional image in all circumstances, including relations with clients, stakeholders, as well as with professional and technical colleagues across wide ranging disciplines.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.6</Prefix>
+            <DescriptionText>Effective team membership and team leadership.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Understands[/b] the fundamentals of team dynamics and leadership.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Functions as[/b] an effective member or leader of diverse engineering teams, including those with multilevel, multi-disciplinary and multi-cultural dimensions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Earns[/b] the trust and confidence of colleagues through competent and timely completion of tasks.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Recognises[/b] the value of alternative and diverse viewpoints, scholarly advice and the importance of professional networking.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Confidently pursues and discerns[/b] expert assistance and professional advice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Takes initiative and fulfils[/b] the leadership role whilst respecting the agreed roles of others.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <IsTicked>true</IsTicked>
+        <DL>1</DL>
+      </PrimaryMapping>
+      <FractionOfSubject>7.5</FractionOfSubject>
+      <AssessmentCatBreakdown>
+        <item>
+          <key>
+            <int>18</int>
+          </key>
+          <value>
+            <double>1.5</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>7</int>
+          </key>
+          <value>
+            <double>1</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>0</int>
+          </key>
+          <value>
+            <double>5</double>
+          </value>
+        </item>
+      </AssessmentCatBreakdown>
+    </MappingClass>
+    <MappingClass>
+      <SubjectLearningOutcome>Elicit speicfic client needs through effective client interaction and collaboration and formulate client needs in clear software requirements</SubjectLearningOutcome>
+      <PrimaryMapping>
+        <Prefix>BaEng</Prefix>
+        <DescriptionText>Engineers Australia Stage 1 Competency Standard</DescriptionText>
+        <ChildCompetencies>
+          <Prefix>1.</Prefix>
+          <DescriptionText>KNOWLEDGE AND SKILL BASE</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>1.1</Prefix>
+            <DescriptionText>[b]Comprehensive, theory based understanding[/b] of the underpinning natural and physical sciences and the engineering fundamentals applicable to the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Engages[/b] with the engineering discipline at a phenomenological level, applying sciences and engineering fundamentals to systematic investigation, interpretation, analysis and innovative solution of complex problems and broader aspects of engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.2</Prefix>
+            <DescriptionText>[b]Conceptual understanding[/b] of the, mathematics, numerical analysis, statistics, and computer and information sciences which underpin the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Develops and fluently applies[/b] relevant investigation analysis, interpretation, assessment, characterisation, prediction, evaluation, modelling, decision making, measurement, evaluation, knowledge management and communication tools and techniques pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.3</Prefix>
+            <DescriptionText>[b]In depth understanding[/b] of specialist bodies of knowledge within the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] advanced technical knowledge and skills in at least one specialist practice domain of the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.4</Prefix>
+            <DescriptionText>[b]Discernment[/b] of knowledge development and research directions within the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies and critically appraises[/b] current developments, advanced technologies, emerging issues and interdisciplinary linkages in at least one specialist practice domain of the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Interprets and applies[/b] selected research literature to inform engineering application in at least one specialist domain of the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.5</Prefix>
+            <DescriptionText>[b]Knowledge[/b] of contextual factors impacting the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies and understands[/b] the interactions between engineering systems and people in the social, cultural, environmental, commercial, legal and political contexts in which they operate, including both the positive role of engineering in sustainable development and the potentially adverse impacts of engineering activity in the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the founding principles of human factors relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the fundamentals of business and enterprise management.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Identifies[/b] the structure, roles and capabilities of the engineering workforce.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the issues associated with international engineering practice and global operating contexts.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.6</Prefix>
+            <DescriptionText>[b]Understanding[/b] of the scope, principles, norms, accountabilities and bounds of contemporary engineering practice in the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Applies[/b] systematic principles of engineering design relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the basis and relevance of standards and codes of practice, as well as legislative and statutory requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the principles of safety engineering, risk management and the health and safety responsibilities of the professional engineer, including legislative requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the social, environmental and economic principles of sustainable engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Understands[/b] the fundamental principles of engineering project management as a basis for planning, organising and managing resources.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the formal structures and methodologies of systems engineering as a holistic basis for managing complexity and sustainability in engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <ChildCompetencies>
+          <Prefix>2.</Prefix>
+          <DescriptionText>ENGINEERING APPLICATION ABILITY</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>2.1</Prefix>
+            <DescriptionText>[b]Application[/b] of established engineering methods to complex engineering problem solving.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies, discerns and characterises[/b] salient issues, [b]determines and analyses[/b] causes and effects, [b]justifies and applies[/b] appropriate simplifying assumptions, [b]predicts[/b] performance and behaviour, [b]synthesises[/b] solution strategies and [b]develops[/b] substantiated conclusions.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Ensures[/b] that all aspects of an engineering activity are soundly based on fundamental principles - by diagnosing, and taking appropriate action with data, calculations, results, proposals, processes, practices, and documented information that may be ill-founded, illogical, erroneous, unreliable or unrealistic.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Competently addresses[/b] engineering problems involving uncertainty, ambiguity, imprecise information and wide-ranging and sometimes conflicting technical and non-technical factors.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Partitions[/b] problems, processes or systems into manageable elements for the purposes of analysis, modelling or design and then [b]re-combines[/b] to form a whole, with the integrity and performance of the overall system as the paramount consideration.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Conceptualises[/b] alternative engineering approaches and [b]evaluates[/b] potential outcomes against appropriate criteria to justify an optimal solution choice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Critically reviews and applies[/b] relevant standards and codes of practice underpinning the engineering discipline and nominated specialisations.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>g)</Prefix>
+              <DescriptionText>[b]Identifies, quantifies, mitigates and manages[/b] technical, health, environmental, safety and other contextual risks associated with engineering application in the designated engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>h)</Prefix>
+              <DescriptionText>[b]Interprets and ensures[/b] compliance with relevant legislative and statutory requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>i)</Prefix>
+              <DescriptionText>[b]Investigates[/b] complex problems using research-based knowledge and research methods.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.2</Prefix>
+            <DescriptionText>[b]Fluent application[/b] of engineering techniques, tools and resources.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently identifies, selects and applies[/b] the materials, components, devices, systems, processes, resources, plant and equipment relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Constructs or selects and applies[/b] from a qualitative description of a phenomenon, process, system, component or device a mathematical, physical or computational model based on fundamental scientific principles and justifiable simplifying assumptions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Determines[/b] properties, performance, safe working limits, failure modes, and other inherent parameters of materials, components and systems relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Applies[/b] a wide range of engineering tools for analysis, simulation, visualisation, synthesis and design, including assessing the accuracy and limitations of such tools, and validation of their results.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Applies[/b] formal systems engineering methods to address the planning and execution of complex, problem solving and engineering projects.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Designs and conducts[/b] experiments, [b]analyses and interprets[/b] result data and [b]formulates[/b] reliable conclusions.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>g)</Prefix>
+              <DescriptionText>[b]Analyses[/b] sources of error in applied models and experiments; [b]eliminates, minimises or compensates[/b] for such errors; [b]quantifies[/b] significance of errors to any conclusions drawn.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>h)</Prefix>
+              <DescriptionText>[b]Safely applies[/b] laboratory, test and experimental procedures appropriate to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>i)</Prefix>
+              <DescriptionText>[b]Understands[/b] the need for systematic management of the acquisition, commissioning, operation, upgrade, monitoring and maintenance of engineering plant, facilities, equipment and systems.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>j)</Prefix>
+              <DescriptionText>[b]Understands[/b] the role of quality management systems, tools and processes within a culture of continuous improvement.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.3</Prefix>
+            <DescriptionText>[b]Application[/b] of systematic engineering synthesis and design processes.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] technical knowledge and open ended problem solving skills as well as appropriate tools and resources to design components, elements, systems, plant, facilities and/or processes to satisfy user requirements.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Addresses[/b] broad contextual constraints such as social, cultural, environmental, commercial, legal political and human factors, as well as health, safety and sustainability imperatives as an integral part of the design process.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Executes and leads[/b] a whole systems design cycle approach including tasks such as: \r\n- determining client requirements and identifying the impact of relevant contextual factors, including business planning and costing targets; \r\n- systematically addressing sustainability criteria; \r\n- working within projected development, production and implementation constraints; \r\n- eliciting, scoping and documenting the required outcomes of the design task and defining acceptance criteria; \r\n- identifying assessing and managing technical, health and safety risks integral to the design process; \r\n- writing engineering specifications, that fully satisfy the formal requirements; \r\n- ensuring compliance with essential engineering standards and codes of practice; \r\n- partitioning the design task into appropriate modular, functional elements; that can be separately addressed and subsequently integrated through defined interfaces; \r\n- identifying and analysing possible design approaches and justifying an optimal approach; \r\n- developing and completing the design using appropriate engineering principles, tools, and processes; \r\n- integrating functional elements to form a coherent design solution; \r\n- quantifying the materials, components, systems, equipment, facilities, engineering resources and operating arrangements needed for implementation of the solution; \r\n- checking the design solution for each element and the integrated system against the engineering specifications; \r\n- devising and documenting tests that will verify performance of the elements and the integrated realisation; \r\n- prototyping/implementing the design solution and verifying performance against specification; \r\n- documenting, commissioning and reporting the design outcome.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the accountabilities of the professional engineer in relation to the ‘design authority’ role.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.4</Prefix>
+            <DescriptionText>[b]Application[/b] of systematic approaches to the conduct and management of engineering projects.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Contributes to and/or manages[/b] [i]complex[/i] engineering project activity, as a member and/or as leader of an engineering team.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Seeks out[/b] the requirements and associated resources and [b]realistically assesses[/b] the scope, dimensions, scale of effort and indicative costs of a [i]complex[/i] engineering project.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Accommodates[/b] relevant contextual issues into all phases of engineering project work, including the fundamentals of business planning and financial management.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] basic systems engineering and/or project management tools and processes to the planning and execution of project work, targeting the delivery of a significant outcome to a professional standard.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the need to plan and quantify performance over the full life-cycle of a project, managing engineering performance within the overall implementation context.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to sustainable engineering practices and the achievement of sustainable outcomes in all facets of engineering project work.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <ChildCompetencies>
+          <Prefix>3.</Prefix>
+          <DescriptionText>PROFESSIONAL AND PERSONAL ATTRIBUTES</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>3.1</Prefix>
+            <DescriptionText>Ethical conduct and professional accountability.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to uphold the Engineers Australia - Code of Ethics, and established norms of professional conduct pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Understands[/b] the need for ‘due-diligence’ in certification, compliance and risk management processes.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Understands[/b] the accountabilities of the professional engineer and the broader engineering team for the safety of other people and for protection of the environment.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the fundamental principles of intellectual property rights and protection.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.2</Prefix>
+            <DescriptionText>Effective oral and written communication in professional and lay domains.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Is proficient in[/b] listening, speaking, reading and writing English, including: \r\n- comprehending critically and fairly the viewpoints of others; \r\n- expressing information effectively and succinctly, issuing instruction, engaging in discussion, presenting arguments and justification, debating and negotiating - to technical and non-technical audiences and using textual, diagrammatic, pictorial and graphical media best suited to the context; \r\n- representing an engineering position, or the engineering profession at large to the broader community; \r\n- appreciating the impact of body language, personal behaviour and other non-verbal communication processes, as well as the fundamentals of human social behaviour and their cross-cultural differences.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Prepares[/b] high quality engineering documents such as progress and project reports, reports of investigations and feasibility studies, proposals, specifications, design records, drawings, technical descriptions and presentations pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.3</Prefix>
+            <DescriptionText>Creative, innovative and pro-active demeanour.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Applies[/b] creative approaches to identify and develop alternative concepts, solutions and procedures, appropriately challenges engineering practices from technical and non-technical viewpoints; identifies new technological opportunities.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Seeks out[/b] new developments in the engineering discipline and specialisations and [b]applies[/b] fundamental knowledge and systematic processes to evaluate and report potential.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] broader fields of science, engineering, technology and commerce from which new ideas and interfaces may be may drawn and readily [b]engages[/b] with professionals from these fields to exchange ideas.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.4</Prefix>
+            <DescriptionText>Professional use and management of information.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Is proficient in[/b] locating and utilising information - including accessing, systematically searching, analysing, evaluating and referencing relevant published works and data; is proficient in the use of indexes, bibliographic databases and other search facilities.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Critically assesses[/b] the accuracy, reliability and authenticity of information.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] common document identification, tracking and control procedures.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.5</Prefix>
+            <DescriptionText>Orderly management of self, and professional conduct.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to critical self-review and performance evaluation against appropriate criteria as a primary means of tracking personal development needs and achievements.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Understands[/b] the importance of being a member of a professional and intellectual community, learning from its knowledge and standards, and contributing to their maintenance and advancement.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to life-long learning and professional development.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Manages[/b] time and processes effectively, [b]prioritises[/b] competing demands to achieve personal, career and organisational goals and objectives.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Thinks critically and applies[/b] an appropriate balance of logic and intellectual criteria to analysis, judgment and decision making.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Presents[/b] a professional image in all circumstances, including relations with clients, stakeholders, as well as with professional and technical colleagues across wide ranging disciplines.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.6</Prefix>
+            <DescriptionText>Effective team membership and team leadership.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Understands[/b] the fundamentals of team dynamics and leadership.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Functions as[/b] an effective member or leader of diverse engineering teams, including those with multilevel, multi-disciplinary and multi-cultural dimensions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Earns[/b] the trust and confidence of colleagues through competent and timely completion of tasks.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Recognises[/b] the value of alternative and diverse viewpoints, scholarly advice and the importance of professional networking.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Confidently pursues and discerns[/b] expert assistance and professional advice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Takes initiative and fulfils[/b] the leadership role whilst respecting the agreed roles of others.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <IsTicked>true</IsTicked>
+        <DL>1</DL>
+      </PrimaryMapping>
+      <FractionOfSubject>26.5</FractionOfSubject>
+      <AssessmentCatBreakdown>
+        <item>
+          <key>
+            <int>15</int>
+          </key>
+          <value>
+            <double>8</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>7</int>
+          </key>
+          <value>
+            <double>1</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>0</int>
+          </key>
+          <value>
+            <double>17.5</double>
+          </value>
+        </item>
+      </AssessmentCatBreakdown>
+    </MappingClass>
+    <MappingClass>
+      <SubjectLearningOutcome>Create effective plans for software verification and validation to enhance software product quality</SubjectLearningOutcome>
+      <PrimaryMapping>
+        <Prefix>BaEng</Prefix>
+        <DescriptionText>Engineers Australia Stage 1 Competency Standard</DescriptionText>
+        <ChildCompetencies>
+          <Prefix>1.</Prefix>
+          <DescriptionText>KNOWLEDGE AND SKILL BASE</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>1.1</Prefix>
+            <DescriptionText>[b]Comprehensive, theory based understanding[/b] of the underpinning natural and physical sciences and the engineering fundamentals applicable to the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Engages[/b] with the engineering discipline at a phenomenological level, applying sciences and engineering fundamentals to systematic investigation, interpretation, analysis and innovative solution of complex problems and broader aspects of engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.2</Prefix>
+            <DescriptionText>[b]Conceptual understanding[/b] of the, mathematics, numerical analysis, statistics, and computer and information sciences which underpin the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Develops and fluently applies[/b] relevant investigation analysis, interpretation, assessment, characterisation, prediction, evaluation, modelling, decision making, measurement, evaluation, knowledge management and communication tools and techniques pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.3</Prefix>
+            <DescriptionText>[b]In depth understanding[/b] of specialist bodies of knowledge within the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] advanced technical knowledge and skills in at least one specialist practice domain of the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.4</Prefix>
+            <DescriptionText>[b]Discernment[/b] of knowledge development and research directions within the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies and critically appraises[/b] current developments, advanced technologies, emerging issues and interdisciplinary linkages in at least one specialist practice domain of the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Interprets and applies[/b] selected research literature to inform engineering application in at least one specialist domain of the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.5</Prefix>
+            <DescriptionText>[b]Knowledge[/b] of contextual factors impacting the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies and understands[/b] the interactions between engineering systems and people in the social, cultural, environmental, commercial, legal and political contexts in which they operate, including both the positive role of engineering in sustainable development and the potentially adverse impacts of engineering activity in the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the founding principles of human factors relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the fundamentals of business and enterprise management.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Identifies[/b] the structure, roles and capabilities of the engineering workforce.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the issues associated with international engineering practice and global operating contexts.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.6</Prefix>
+            <DescriptionText>[b]Understanding[/b] of the scope, principles, norms, accountabilities and bounds of contemporary engineering practice in the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Applies[/b] systematic principles of engineering design relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the basis and relevance of standards and codes of practice, as well as legislative and statutory requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the principles of safety engineering, risk management and the health and safety responsibilities of the professional engineer, including legislative requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the social, environmental and economic principles of sustainable engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Understands[/b] the fundamental principles of engineering project management as a basis for planning, organising and managing resources.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the formal structures and methodologies of systems engineering as a holistic basis for managing complexity and sustainability in engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <ChildCompetencies>
+          <Prefix>2.</Prefix>
+          <DescriptionText>ENGINEERING APPLICATION ABILITY</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>2.1</Prefix>
+            <DescriptionText>[b]Application[/b] of established engineering methods to complex engineering problem solving.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies, discerns and characterises[/b] salient issues, [b]determines and analyses[/b] causes and effects, [b]justifies and applies[/b] appropriate simplifying assumptions, [b]predicts[/b] performance and behaviour, [b]synthesises[/b] solution strategies and [b]develops[/b] substantiated conclusions.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Ensures[/b] that all aspects of an engineering activity are soundly based on fundamental principles - by diagnosing, and taking appropriate action with data, calculations, results, proposals, processes, practices, and documented information that may be ill-founded, illogical, erroneous, unreliable or unrealistic.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Competently addresses[/b] engineering problems involving uncertainty, ambiguity, imprecise information and wide-ranging and sometimes conflicting technical and non-technical factors.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Partitions[/b] problems, processes or systems into manageable elements for the purposes of analysis, modelling or design and then [b]re-combines[/b] to form a whole, with the integrity and performance of the overall system as the paramount consideration.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Conceptualises[/b] alternative engineering approaches and [b]evaluates[/b] potential outcomes against appropriate criteria to justify an optimal solution choice.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Critically reviews and applies[/b] relevant standards and codes of practice underpinning the engineering discipline and nominated specialisations.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>g)</Prefix>
+              <DescriptionText>[b]Identifies, quantifies, mitigates and manages[/b] technical, health, environmental, safety and other contextual risks associated with engineering application in the designated engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>h)</Prefix>
+              <DescriptionText>[b]Interprets and ensures[/b] compliance with relevant legislative and statutory requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>i)</Prefix>
+              <DescriptionText>[b]Investigates[/b] complex problems using research-based knowledge and research methods.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.2</Prefix>
+            <DescriptionText>[b]Fluent application[/b] of engineering techniques, tools and resources.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently identifies, selects and applies[/b] the materials, components, devices, systems, processes, resources, plant and equipment relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Constructs or selects and applies[/b] from a qualitative description of a phenomenon, process, system, component or device a mathematical, physical or computational model based on fundamental scientific principles and justifiable simplifying assumptions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Determines[/b] properties, performance, safe working limits, failure modes, and other inherent parameters of materials, components and systems relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Applies[/b] a wide range of engineering tools for analysis, simulation, visualisation, synthesis and design, including assessing the accuracy and limitations of such tools, and validation of their results.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Applies[/b] formal systems engineering methods to address the planning and execution of complex, problem solving and engineering projects.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Designs and conducts[/b] experiments, [b]analyses and interprets[/b] result data and [b]formulates[/b] reliable conclusions.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>g)</Prefix>
+              <DescriptionText>[b]Analyses[/b] sources of error in applied models and experiments; [b]eliminates, minimises or compensates[/b] for such errors; [b]quantifies[/b] significance of errors to any conclusions drawn.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>h)</Prefix>
+              <DescriptionText>[b]Safely applies[/b] laboratory, test and experimental procedures appropriate to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>i)</Prefix>
+              <DescriptionText>[b]Understands[/b] the need for systematic management of the acquisition, commissioning, operation, upgrade, monitoring and maintenance of engineering plant, facilities, equipment and systems.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>j)</Prefix>
+              <DescriptionText>[b]Understands[/b] the role of quality management systems, tools and processes within a culture of continuous improvement.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.3</Prefix>
+            <DescriptionText>[b]Application[/b] of systematic engineering synthesis and design processes.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] technical knowledge and open ended problem solving skills as well as appropriate tools and resources to design components, elements, systems, plant, facilities and/or processes to satisfy user requirements.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Addresses[/b] broad contextual constraints such as social, cultural, environmental, commercial, legal political and human factors, as well as health, safety and sustainability imperatives as an integral part of the design process.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Executes and leads[/b] a whole systems design cycle approach including tasks such as: \r\n- determining client requirements and identifying the impact of relevant contextual factors, including business planning and costing targets; \r\n- systematically addressing sustainability criteria; \r\n- working within projected development, production and implementation constraints; \r\n- eliciting, scoping and documenting the required outcomes of the design task and defining acceptance criteria; \r\n- identifying assessing and managing technical, health and safety risks integral to the design process; \r\n- writing engineering specifications, that fully satisfy the formal requirements; \r\n- ensuring compliance with essential engineering standards and codes of practice; \r\n- partitioning the design task into appropriate modular, functional elements; that can be separately addressed and subsequently integrated through defined interfaces; \r\n- identifying and analysing possible design approaches and justifying an optimal approach; \r\n- developing and completing the design using appropriate engineering principles, tools, and processes; \r\n- integrating functional elements to form a coherent design solution; \r\n- quantifying the materials, components, systems, equipment, facilities, engineering resources and operating arrangements needed for implementation of the solution; \r\n- checking the design solution for each element and the integrated system against the engineering specifications; \r\n- devising and documenting tests that will verify performance of the elements and the integrated realisation; \r\n- prototyping/implementing the design solution and verifying performance against specification; \r\n- documenting, commissioning and reporting the design outcome.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the accountabilities of the professional engineer in relation to the ‘design authority’ role.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.4</Prefix>
+            <DescriptionText>[b]Application[/b] of systematic approaches to the conduct and management of engineering projects.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Contributes to and/or manages[/b] [i]complex[/i] engineering project activity, as a member and/or as leader of an engineering team.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Seeks out[/b] the requirements and associated resources and [b]realistically assesses[/b] the scope, dimensions, scale of effort and indicative costs of a [i]complex[/i] engineering project.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Accommodates[/b] relevant contextual issues into all phases of engineering project work, including the fundamentals of business planning and financial management.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] basic systems engineering and/or project management tools and processes to the planning and execution of project work, targeting the delivery of a significant outcome to a professional standard.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the need to plan and quantify performance over the full life-cycle of a project, managing engineering performance within the overall implementation context.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to sustainable engineering practices and the achievement of sustainable outcomes in all facets of engineering project work.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <ChildCompetencies>
+          <Prefix>3.</Prefix>
+          <DescriptionText>PROFESSIONAL AND PERSONAL ATTRIBUTES</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>3.1</Prefix>
+            <DescriptionText>Ethical conduct and professional accountability.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to uphold the Engineers Australia - Code of Ethics, and established norms of professional conduct pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Understands[/b] the need for ‘due-diligence’ in certification, compliance and risk management processes.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Understands[/b] the accountabilities of the professional engineer and the broader engineering team for the safety of other people and for protection of the environment.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the fundamental principles of intellectual property rights and protection.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.2</Prefix>
+            <DescriptionText>Effective oral and written communication in professional and lay domains.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Is proficient in[/b] listening, speaking, reading and writing English, including: \r\n- comprehending critically and fairly the viewpoints of others; \r\n- expressing information effectively and succinctly, issuing instruction, engaging in discussion, presenting arguments and justification, debating and negotiating - to technical and non-technical audiences and using textual, diagrammatic, pictorial and graphical media best suited to the context; \r\n- representing an engineering position, or the engineering profession at large to the broader community; \r\n- appreciating the impact of body language, personal behaviour and other non-verbal communication processes, as well as the fundamentals of human social behaviour and their cross-cultural differences.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Prepares[/b] high quality engineering documents such as progress and project reports, reports of investigations and feasibility studies, proposals, specifications, design records, drawings, technical descriptions and presentations pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.3</Prefix>
+            <DescriptionText>Creative, innovative and pro-active demeanour.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Applies[/b] creative approaches to identify and develop alternative concepts, solutions and procedures, appropriately challenges engineering practices from technical and non-technical viewpoints; identifies new technological opportunities.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Seeks out[/b] new developments in the engineering discipline and specialisations and [b]applies[/b] fundamental knowledge and systematic processes to evaluate and report potential.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] broader fields of science, engineering, technology and commerce from which new ideas and interfaces may be may drawn and readily [b]engages[/b] with professionals from these fields to exchange ideas.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.4</Prefix>
+            <DescriptionText>Professional use and management of information.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Is proficient in[/b] locating and utilising information - including accessing, systematically searching, analysing, evaluating and referencing relevant published works and data; is proficient in the use of indexes, bibliographic databases and other search facilities.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Critically assesses[/b] the accuracy, reliability and authenticity of information.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] common document identification, tracking and control procedures.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.5</Prefix>
+            <DescriptionText>Orderly management of self, and professional conduct.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to critical self-review and performance evaluation against appropriate criteria as a primary means of tracking personal development needs and achievements.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Understands[/b] the importance of being a member of a professional and intellectual community, learning from its knowledge and standards, and contributing to their maintenance and advancement.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to life-long learning and professional development.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Manages[/b] time and processes effectively, [b]prioritises[/b] competing demands to achieve personal, career and organisational goals and objectives.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Thinks critically and applies[/b] an appropriate balance of logic and intellectual criteria to analysis, judgment and decision making.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Presents[/b] a professional image in all circumstances, including relations with clients, stakeholders, as well as with professional and technical colleagues across wide ranging disciplines.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.6</Prefix>
+            <DescriptionText>Effective team membership and team leadership.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Understands[/b] the fundamentals of team dynamics and leadership.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Functions as[/b] an effective member or leader of diverse engineering teams, including those with multilevel, multi-disciplinary and multi-cultural dimensions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Earns[/b] the trust and confidence of colleagues through competent and timely completion of tasks.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Recognises[/b] the value of alternative and diverse viewpoints, scholarly advice and the importance of professional networking.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Confidently pursues and discerns[/b] expert assistance and professional advice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Takes initiative and fulfils[/b] the leadership role whilst respecting the agreed roles of others.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <IsTicked>true</IsTicked>
+        <DL>1</DL>
+      </PrimaryMapping>
+      <FractionOfSubject>34.7</FractionOfSubject>
+      <AssessmentCatBreakdown>
+        <item>
+          <key>
+            <int>15</int>
+          </key>
+          <value>
+            <double>16.2</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>7</int>
+          </key>
+          <value>
+            <double>1</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>0</int>
+          </key>
+          <value>
+            <double>17.5</double>
+          </value>
+        </item>
+      </AssessmentCatBreakdown>
+    </MappingClass>
+    <MappingClass>
+      <SubjectLearningOutcome>Generate process and proudct metrics for monitoring and measuring software product quality</SubjectLearningOutcome>
+      <PrimaryMapping>
+        <Prefix>BaEng</Prefix>
+        <DescriptionText>Engineers Australia Stage 1 Competency Standard</DescriptionText>
+        <ChildCompetencies>
+          <Prefix>1.</Prefix>
+          <DescriptionText>KNOWLEDGE AND SKILL BASE</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>1.1</Prefix>
+            <DescriptionText>[b]Comprehensive, theory based understanding[/b] of the underpinning natural and physical sciences and the engineering fundamentals applicable to the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Engages[/b] with the engineering discipline at a phenomenological level, applying sciences and engineering fundamentals to systematic investigation, interpretation, analysis and innovative solution of complex problems and broader aspects of engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.2</Prefix>
+            <DescriptionText>[b]Conceptual understanding[/b] of the, mathematics, numerical analysis, statistics, and computer and information sciences which underpin the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Develops and fluently applies[/b] relevant investigation analysis, interpretation, assessment, characterisation, prediction, evaluation, modelling, decision making, measurement, evaluation, knowledge management and communication tools and techniques pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.3</Prefix>
+            <DescriptionText>[b]In depth understanding[/b] of specialist bodies of knowledge within the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] advanced technical knowledge and skills in at least one specialist practice domain of the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.4</Prefix>
+            <DescriptionText>[b]Discernment[/b] of knowledge development and research directions within the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies and critically appraises[/b] current developments, advanced technologies, emerging issues and interdisciplinary linkages in at least one specialist practice domain of the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Interprets and applies[/b] selected research literature to inform engineering application in at least one specialist domain of the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.5</Prefix>
+            <DescriptionText>[b]Knowledge[/b] of contextual factors impacting the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies and understands[/b] the interactions between engineering systems and people in the social, cultural, environmental, commercial, legal and political contexts in which they operate, including both the positive role of engineering in sustainable development and the potentially adverse impacts of engineering activity in the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the founding principles of human factors relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the fundamentals of business and enterprise management.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Identifies[/b] the structure, roles and capabilities of the engineering workforce.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the issues associated with international engineering practice and global operating contexts.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>1.6</Prefix>
+            <DescriptionText>[b]Understanding[/b] of the scope, principles, norms, accountabilities and bounds of contemporary engineering practice in the engineering discipline.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Applies[/b] systematic principles of engineering design relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the basis and relevance of standards and codes of practice, as well as legislative and statutory requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the principles of safety engineering, risk management and the health and safety responsibilities of the professional engineer, including legislative requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the social, environmental and economic principles of sustainable engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Understands[/b] the fundamental principles of engineering project management as a basis for planning, organising and managing resources.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Appreciates[/b] the formal structures and methodologies of systems engineering as a holistic basis for managing complexity and sustainability in engineering practice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <ChildCompetencies>
+          <Prefix>2.</Prefix>
+          <DescriptionText>ENGINEERING APPLICATION ABILITY</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>2.1</Prefix>
+            <DescriptionText>[b]Application[/b] of established engineering methods to complex engineering problem solving.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Identifies, discerns and characterises[/b] salient issues, [b]determines and analyses[/b] causes and effects, [b]justifies and applies[/b] appropriate simplifying assumptions, [b]predicts[/b] performance and behaviour, [b]synthesises[/b] solution strategies and [b]develops[/b] substantiated conclusions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Ensures[/b] that all aspects of an engineering activity are soundly based on fundamental principles - by diagnosing, and taking appropriate action with data, calculations, results, proposals, processes, practices, and documented information that may be ill-founded, illogical, erroneous, unreliable or unrealistic.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Competently addresses[/b] engineering problems involving uncertainty, ambiguity, imprecise information and wide-ranging and sometimes conflicting technical and non-technical factors.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Partitions[/b] problems, processes or systems into manageable elements for the purposes of analysis, modelling or design and then [b]re-combines[/b] to form a whole, with the integrity and performance of the overall system as the paramount consideration.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Conceptualises[/b] alternative engineering approaches and [b]evaluates[/b] potential outcomes against appropriate criteria to justify an optimal solution choice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Critically reviews and applies[/b] relevant standards and codes of practice underpinning the engineering discipline and nominated specialisations.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>g)</Prefix>
+              <DescriptionText>[b]Identifies, quantifies, mitigates and manages[/b] technical, health, environmental, safety and other contextual risks associated with engineering application in the designated engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>h)</Prefix>
+              <DescriptionText>[b]Interprets and ensures[/b] compliance with relevant legislative and statutory requirements applicable to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>i)</Prefix>
+              <DescriptionText>[b]Investigates[/b] complex problems using research-based knowledge and research methods.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.2</Prefix>
+            <DescriptionText>[b]Fluent application[/b] of engineering techniques, tools and resources.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently identifies, selects and applies[/b] the materials, components, devices, systems, processes, resources, plant and equipment relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Constructs or selects and applies[/b] from a qualitative description of a phenomenon, process, system, component or device a mathematical, physical or computational model based on fundamental scientific principles and justifiable simplifying assumptions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Determines[/b] properties, performance, safe working limits, failure modes, and other inherent parameters of materials, components and systems relevant to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Applies[/b] a wide range of engineering tools for analysis, simulation, visualisation, synthesis and design, including assessing the accuracy and limitations of such tools, and validation of their results.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Applies[/b] formal systems engineering methods to address the planning and execution of complex, problem solving and engineering projects.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Designs and conducts[/b] experiments, [b]analyses and interprets[/b] result data and [b]formulates[/b] reliable conclusions.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>3</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>g)</Prefix>
+              <DescriptionText>[b]Analyses[/b] sources of error in applied models and experiments; [b]eliminates, minimises or compensates[/b] for such errors; [b]quantifies[/b] significance of errors to any conclusions drawn.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>h)</Prefix>
+              <DescriptionText>[b]Safely applies[/b] laboratory, test and experimental procedures appropriate to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>i)</Prefix>
+              <DescriptionText>[b]Understands[/b] the need for systematic management of the acquisition, commissioning, operation, upgrade, monitoring and maintenance of engineering plant, facilities, equipment and systems.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>j)</Prefix>
+              <DescriptionText>[b]Understands[/b] the role of quality management systems, tools and processes within a culture of continuous improvement.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.3</Prefix>
+            <DescriptionText>[b]Application[/b] of systematic engineering synthesis and design processes.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] technical knowledge and open ended problem solving skills as well as appropriate tools and resources to design components, elements, systems, plant, facilities and/or processes to satisfy user requirements.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Addresses[/b] broad contextual constraints such as social, cultural, environmental, commercial, legal political and human factors, as well as health, safety and sustainability imperatives as an integral part of the design process.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Executes and leads[/b] a whole systems design cycle approach including tasks such as: \r\n- determining client requirements and identifying the impact of relevant contextual factors, including business planning and costing targets; \r\n- systematically addressing sustainability criteria; \r\n- working within projected development, production and implementation constraints; \r\n- eliciting, scoping and documenting the required outcomes of the design task and defining acceptance criteria; \r\n- identifying assessing and managing technical, health and safety risks integral to the design process; \r\n- writing engineering specifications, that fully satisfy the formal requirements; \r\n- ensuring compliance with essential engineering standards and codes of practice; \r\n- partitioning the design task into appropriate modular, functional elements; that can be separately addressed and subsequently integrated through defined interfaces; \r\n- identifying and analysing possible design approaches and justifying an optimal approach; \r\n- developing and completing the design using appropriate engineering principles, tools, and processes; \r\n- integrating functional elements to form a coherent design solution; \r\n- quantifying the materials, components, systems, equipment, facilities, engineering resources and operating arrangements needed for implementation of the solution; \r\n- checking the design solution for each element and the integrated system against the engineering specifications; \r\n- devising and documenting tests that will verify performance of the elements and the integrated realisation; \r\n- prototyping/implementing the design solution and verifying performance against specification; \r\n- documenting, commissioning and reporting the design outcome.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the accountabilities of the professional engineer in relation to the ‘design authority’ role.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>2.4</Prefix>
+            <DescriptionText>[b]Application[/b] of systematic approaches to the conduct and management of engineering projects.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Contributes to and/or manages[/b] [i]complex[/i] engineering project activity, as a member and/or as leader of an engineering team.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Seeks out[/b] the requirements and associated resources and [b]realistically assesses[/b] the scope, dimensions, scale of effort and indicative costs of a [i]complex[/i] engineering project.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Accommodates[/b] relevant contextual issues into all phases of engineering project work, including the fundamentals of business planning and financial management.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Proficiently applies[/b] basic systems engineering and/or project management tools and processes to the planning and execution of project work, targeting the delivery of a significant outcome to a professional standard.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the need to plan and quantify performance over the full life-cycle of a project, managing engineering performance within the overall implementation context.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to sustainable engineering practices and the achievement of sustainable outcomes in all facets of engineering project work.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <ChildCompetencies>
+          <Prefix>3.</Prefix>
+          <DescriptionText>PROFESSIONAL AND PERSONAL ATTRIBUTES</DescriptionText>
+          <ChildCompetencies>
+            <Prefix>3.1</Prefix>
+            <DescriptionText>Ethical conduct and professional accountability.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to uphold the Engineers Australia - Code of Ethics, and established norms of professional conduct pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Understands[/b] the need for ‘due-diligence’ in certification, compliance and risk management processes.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Understands[/b] the accountabilities of the professional engineer and the broader engineering team for the safety of other people and for protection of the environment.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] the fundamental principles of intellectual property rights and protection.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.2</Prefix>
+            <DescriptionText>Effective oral and written communication in professional and lay domains.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Is proficient in[/b] listening, speaking, reading and writing English, including: \r\n- comprehending critically and fairly the viewpoints of others; \r\n- expressing information effectively and succinctly, issuing instruction, engaging in discussion, presenting arguments and justification, debating and negotiating - to technical and non-technical audiences and using textual, diagrammatic, pictorial and graphical media best suited to the context; \r\n- representing an engineering position, or the engineering profession at large to the broader community; \r\n- appreciating the impact of body language, personal behaviour and other non-verbal communication processes, as well as the fundamentals of human social behaviour and their cross-cultural differences.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Prepares[/b] high quality engineering documents such as progress and project reports, reports of investigations and feasibility studies, proposals, specifications, design records, drawings, technical descriptions and presentations pertinent to the engineering discipline.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.3</Prefix>
+            <DescriptionText>Creative, innovative and pro-active demeanour.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Applies[/b] creative approaches to identify and develop alternative concepts, solutions and procedures, appropriately challenges engineering practices from technical and non-technical viewpoints; identifies new technological opportunities.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Seeks out[/b] new developments in the engineering discipline and specialisations and [b]applies[/b] fundamental knowledge and systematic processes to evaluate and report potential.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] broader fields of science, engineering, technology and commerce from which new ideas and interfaces may be may drawn and readily [b]engages[/b] with professionals from these fields to exchange ideas.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.4</Prefix>
+            <DescriptionText>Professional use and management of information.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Is proficient in[/b] locating and utilising information - including accessing, systematically searching, analysing, evaluating and referencing relevant published works and data; is proficient in the use of indexes, bibliographic databases and other search facilities.</DescriptionText>
+              <IsTicked>true</IsTicked>
+              <DL>2</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Critically assesses[/b] the accuracy, reliability and authenticity of information.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Is aware of[/b] common document identification, tracking and control procedures.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>true</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.5</Prefix>
+            <DescriptionText>Orderly management of self, and professional conduct.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to critical self-review and performance evaluation against appropriate criteria as a primary means of tracking personal development needs and achievements.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Understands[/b] the importance of being a member of a professional and intellectual community, learning from its knowledge and standards, and contributing to their maintenance and advancement.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Demonstrates[/b] commitment to life-long learning and professional development.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Manages[/b] time and processes effectively, [b]prioritises[/b] competing demands to achieve personal, career and organisational goals and objectives.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Thinks critically and applies[/b] an appropriate balance of logic and intellectual criteria to analysis, judgment and decision making.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Presents[/b] a professional image in all circumstances, including relations with clients, stakeholders, as well as with professional and technical colleagues across wide ranging disciplines.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <ChildCompetencies>
+            <Prefix>3.6</Prefix>
+            <DescriptionText>Effective team membership and team leadership.</DescriptionText>
+            <ChildCompetencies>
+              <Prefix>a)</Prefix>
+              <DescriptionText>[b]Understands[/b] the fundamentals of team dynamics and leadership.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>b)</Prefix>
+              <DescriptionText>[b]Functions as[/b] an effective member or leader of diverse engineering teams, including those with multilevel, multi-disciplinary and multi-cultural dimensions.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>c)</Prefix>
+              <DescriptionText>[b]Earns[/b] the trust and confidence of colleagues through competent and timely completion of tasks.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>d)</Prefix>
+              <DescriptionText>[b]Recognises[/b] the value of alternative and diverse viewpoints, scholarly advice and the importance of professional networking.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>e)</Prefix>
+              <DescriptionText>[b]Confidently pursues and discerns[/b] expert assistance and professional advice.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <ChildCompetencies>
+              <Prefix>f)</Prefix>
+              <DescriptionText>[b]Takes initiative and fulfils[/b] the leadership role whilst respecting the agreed roles of others.</DescriptionText>
+              <IsTicked>false</IsTicked>
+              <DL>1</DL>
+            </ChildCompetencies>
+            <IsTicked>false</IsTicked>
+            <DL>1</DL>
+          </ChildCompetencies>
+          <IsTicked>true</IsTicked>
+          <DL>1</DL>
+        </ChildCompetencies>
+        <IsTicked>true</IsTicked>
+        <DL>1</DL>
+      </PrimaryMapping>
+      <FractionOfSubject>15.4</FractionOfSubject>
+      <AssessmentCatBreakdown>
+        <item>
+          <key>
+            <int>15</int>
+          </key>
+          <value>
+            <double>9.4</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>7</int>
+          </key>
+          <value>
+            <double>1</double>
+          </value>
+        </item>
+        <item>
+          <key>
+            <int>0</int>
+          </key>
+          <value>
+            <double>5</double>
+          </value>
+        </item>
+      </AssessmentCatBreakdown>
+    </MappingClass>
+  </SLOsAndMapping>
+  <MyAssessmentMapping>
+    <AllAssessment>
+      <PieceOfAssessment>
+        <PoaName>Assignment 1</PoaName>
+        <PoaType>18</PoaType>
+        <PoaWeight>3</PoaWeight>
+        <PoaBreakdown>
+          <Val1>50</Val1>
+          <Val2>50</Val2>
+          <Val3>0</Val3>
+          <Val4>0</Val4>
+          <Val5>0</Val5>
+          <Val6>0</Val6>
+          <Val7>0</Val7>
+        </PoaBreakdown>
+      </PieceOfAssessment>
+      <PieceOfAssessment>
+        <PoaName>Assignment 2</PoaName>
+        <PoaType>15</PoaType>
+        <PoaWeight>16</PoaWeight>
+        <PoaBreakdown>
+          <Val1>20</Val1>
+          <Val2>0</Val2>
+          <Val3>50</Val3>
+          <Val4>20</Val4>
+          <Val5>10</Val5>
+          <Val6>0</Val6>
+          <Val7>0</Val7>
+        </PoaBreakdown>
+      </PieceOfAssessment>
+      <PieceOfAssessment>
+        <PoaName>Assignment 3</PoaName>
+        <PoaType>15</PoaType>
+        <PoaWeight>26</PoaWeight>
+        <PoaBreakdown>
+          <Val1>20</Val1>
+          <Val2>0</Val2>
+          <Val3>0</Val3>
+          <Val4>50</Val4>
+          <Val5>30</Val5>
+          <Val6>0</Val6>
+          <Val7>0</Val7>
+        </PoaBreakdown>
+      </PieceOfAssessment>
+      <PieceOfAssessment>
+        <PoaName>Tutorial work</PoaName>
+        <PoaType>7</PoaType>
+        <PoaWeight>5</PoaWeight>
+        <PoaBreakdown>
+          <Val1>20</Val1>
+          <Val2>20</Val2>
+          <Val3>20</Val3>
+          <Val4>20</Val4>
+          <Val5>20</Val5>
+          <Val6>0</Val6>
+          <Val7>0</Val7>
+        </PoaBreakdown>
+      </PieceOfAssessment>
+      <PieceOfAssessment>
+        <PoaName>Final exam</PoaName>
+        <PoaType>0</PoaType>
+        <PoaWeight>50</PoaWeight>
+        <PoaBreakdown>
+          <Val1>10</Val1>
+          <Val2>10</Val2>
+          <Val3>35</Val3>
+          <Val4>35</Val4>
+          <Val5>10</Val5>
+          <Val6>0</Val6>
+          <Val7>0</Val7>
+        </PoaBreakdown>
+      </PieceOfAssessment>
+    </AllAssessment>
+    <TotalWeight>100</TotalWeight>
+  </MyAssessmentMapping>
+</World>

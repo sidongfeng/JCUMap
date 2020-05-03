@@ -99,12 +99,16 @@
                                 To begin, either open an existing project, or start a new one.
                             </p>
                             <div class="row" style="margin-top: 30px;">
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <p>Opening Existing Mapping Project</p>
+                                    <form class="md-form" id="uploadForm" enctype="multipart/form-data" action="/step" method="post">
+                                        <input id="fileInput" class="filename" type="file" name="filename">
+                                        <input class="btn btn-primary submit" type="submit" value="Upload">
+                                    </form>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <p>Create New Mapping Project</p>
-                                    <a href="/step"><button type="button" class="btn btn-primary">Create New Project</button></a>
+                                    <a href="/step?filename=-1"><button type="button" class="btn btn-primary">Create New Project</button></a>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +123,7 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <!-- <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
          -->
-        <!-- <script src="js/index.js"></script> -->
+        <script src="js/index.js"></script>
 
     </body>
 </html>

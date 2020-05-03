@@ -16,63 +16,92 @@ $(document).ready(function() {
     var MappingClassList = [];
     var PieceOfAssessmentList = [];
 
-    $.ajax({
-        type: "GET",
-        url: "../data/COMP4130.xml",
-        dataType: "xml",
-        async: false, //设置为同步请求
-        error: function(xml)
-        {
-            alert("XML Not found!");
-        },
-        success: function (ResponseText) {
-            SubjectCode = $(ResponseText).find('SubjectCode').text();
-            SubjectName = $(ResponseText).find('SubjectName').text();
-            SubjectCoordinator = $(ResponseText).find('SubjectCoordinator').text();
-            SubjectDescription = $(ResponseText).find('SubjectDescription').text();
-            CreditPoints = $(ResponseText).find('CreditPoints').text();
-            StudyYear = $(ResponseText).find('StudyYear').text();
-            TeachingPeriod = $(ResponseText).find('TeachingPeriod').text();
-            SLOCount = parseInt($(ResponseText).find('SLOCount').text());
-
-            var MappingClass = $(ResponseText).find('MappingClass');
-            for (var i=0; i<MappingClass.length; i++){
-                var SubjectLearningOutcome = MappingClass.eq(i).find('SubjectLearningOutcome').text();
-                var DLList = [];
-                var IsTickedList = [];
-                MappingClass.eq(i).find('ChildCompetencies').find('ChildCompetencies').find('ChildCompetencies').each(function() {
-                    var DL = $(this).find('DL').text();
-                    var IsTicked = JSON.parse($(this).find('IsTicked').text());
-                    DLList.push(DL);
-                    IsTickedList.push(IsTicked);
-                });
-                var Mapping = {
-                    "SubjectLearningOutcome": SubjectLearningOutcome,
-                    "DL": DLList,
-                    "IsTicked": IsTickedList
-                };
-                MappingClassList.push(Mapping);
-            };
-
-            var PieceOfAssessment = $(ResponseText).find('PieceOfAssessment');
-            for (var i=0; i<MappingClass.length; i++){
-                var PoaName = PieceOfAssessment.eq(i).find('PoaName').text();
-                var PoaType = PieceOfAssessment.eq(i).find('PoaType').text();
-                var PoaWeight = PieceOfAssessment.eq(i).find('PoaWeight').text();
-                var PoaBreakdown = new Array(7).fill(0);
-                for (var j=0; j<7; j++){
-                    PoaBreakdown[j] = parseInt(PieceOfAssessment.eq(i).find('PoaBreakdown').find('Val'+(j+1)).text());
-                };
-                var Piece = {
-                    "PoaName": PoaName,
-                    "PoaType": PoaType,
-                    "PoaWeight": PoaWeight,
-                    "PoaBreakdown": PoaBreakdown
-                };
-                PieceOfAssessmentList.push(Piece);
-            };
+    var getQueryVariable = function(variable){
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
         }
-      });
+        return(false);
+    }
+    var filename = getQueryVariable('filename');
+    if (filename=='-1'){
+        console.log('Initial XML')
+        MappingClassList.push({
+            "SubjectLearningOutcome": "",
+            "DL": new Array(69).fill("1"),
+            "IsTicked": new Array(69).fill(false)
+        });
+        PieceOfAssessmentList.push({
+            "PoaName": "",
+            "PoaType": 0,
+            "PoaWeight": 0,
+            "PoaBreakdown": new Array(7).fill(0)
+        })
+    }else{
+        console.log('Load XML')
+        $.ajax({
+            type: "GET",
+            url: "../data/"+filename,
+            dataType: "xml",
+            async: false, //设置为同步请求
+            error: function(xml)
+            {
+                alert("XML Not found!");
+            },
+            success: function (ResponseText) {
+                SubjectCode = $(ResponseText).find('SubjectCode').text();
+                SubjectName = $(ResponseText).find('SubjectName').text();
+                SubjectCoordinator = $(ResponseText).find('SubjectCoordinator').text();
+                SubjectDescription = $(ResponseText).find('SubjectDescription').text();
+                CreditPoints = $(ResponseText).find('CreditPoints').text();
+                StudyYear = $(ResponseText).find('StudyYear').text();
+                TeachingPeriod = $(ResponseText).find('TeachingPeriod').text();
+                SLOCount = parseInt($(ResponseText).find('SLOCount').text());
+    
+                var MappingClass = $(ResponseText).find('MappingClass');
+                for (var i=0; i<MappingClass.length; i++){
+                    var SubjectLearningOutcome = MappingClass.eq(i).find('SubjectLearningOutcome').text();
+                    var DLList = [];
+                    var IsTickedList = [];
+                    MappingClass.eq(i).find('ChildCompetencies').find('ChildCompetencies').find('ChildCompetencies').each(function() {
+                        var DL = $(this).find('DL').text();
+                        var IsTicked = JSON.parse($(this).find('IsTicked').text());
+                        DLList.push(DL);
+                        IsTickedList.push(IsTicked);
+                    });
+                    var Mapping = {
+                        "SubjectLearningOutcome": SubjectLearningOutcome,
+                        "DL": DLList,
+                        "IsTicked": IsTickedList
+                    };
+                    MappingClassList.push(Mapping);
+                };
+    
+                var PieceOfAssessment = $(ResponseText).find('PieceOfAssessment');
+                for (var i=0; i<MappingClass.length; i++){
+                    var PoaName = PieceOfAssessment.eq(i).find('PoaName').text();
+                    var PoaType = PieceOfAssessment.eq(i).find('PoaType').text();
+                    var PoaWeight = PieceOfAssessment.eq(i).find('PoaWeight').text();
+                    var PoaBreakdown = new Array(7).fill(0);
+                    for (var j=0; j<7; j++){
+                        PoaBreakdown[j] = parseInt(PieceOfAssessment.eq(i).find('PoaBreakdown').find('Val'+(j+1)).text());
+                    };
+                    var Piece = {
+                        "PoaName": PoaName,
+                        "PoaType": PoaType,
+                        "PoaWeight": PoaWeight,
+                        "PoaBreakdown": PoaBreakdown
+                    };
+                    PieceOfAssessmentList.push(Piece);
+                };
+            }
+          });
+    }
+    
+
+
 
 
     /* Step 3 Add function  */
@@ -146,54 +175,6 @@ $(document).ready(function() {
         }
     });
 
-    /* Load Step 4 */
-    let slo_index = 1;
-    $('#step4next').on('click', function() {
-        document.getElementById("step4-input").getElementsByClassName("title")[0].innerHTML = "<strong>SLO"+slo_index+": </strong>"+$("#SLO"+slo_index).val();
-        $.ajax({
-            type: "GET",
-            url: "../data/COMP4130.xml",
-            dataType: "xml",
-            error: function(xml)
-            {
-                alert("XML Not found!");
-            },
-            success: function (ResponseText) {
-                var MappingClass = $(ResponseText).find('MappingClass').eq(slo_index-1);
-                var xml_slo = MappingClass.find('SubjectLearningOutcome').text();
-                var user_slo = $("#SLO"+slo_index).val();
-                if (user_slo == xml_slo){
-                    var idx = 0;
-                    var highlight = false;
-                    MappingClass.find('ChildCompetencies').find('ChildCompetencies').find('ChildCompetencies').each(function() {
-                        // console.log($(this).parent().find('Prefix').text() + "  " + $(this).find('Prefix').text() + "===" + $(this).find('DL').text())
-                        var DL = $(this).find('DL').text();
-                        $(".step4-input-checkbox").eq(idx).find("select").find("option:contains('DL"+DL+"')").attr("selected", true);
-                        var IsTicked = JSON.parse($(this).find('IsTicked').text());
-                        if (IsTicked){
-                            $(".step4-input-checkbox").eq(idx).find("input").attr("checked", true);
-                            $(".step4-input-checkbox").eq(idx).parent().parent().addClass('highlight');
-                            highlight = true;
-                        };
-                        idx ++;
-                        // if (Step4Slice.indexOf(idx) != -1){
-                        //     if (highlight){
-                        //         $("li[data-type='"+ Step4Slice.indexOf(idx) +"'").addClass('highlight');
-                        //     }
-                        // }
-                    });
-                }else{
-                    console.log("clean")
-                    init_step4();
-                };
-            },
-            complete: function (){
-                slo_index ++;
-            }
-        });
-        // slo_index ++;
-        
-    });
 
     var init_step4 = function(){
         $(".step4-input-checkbox").each(function() {
@@ -527,25 +508,11 @@ $(document).ready(function() {
 
     /* Load Step 6 */ 
     var Load_Step6 = function(){
-            // var xml = '<?xml version="1.0" encoding="utf-8"?>';
-            // xml += '<World xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">';
-            // xml += '</World>';
-            // xml += '<CourseIndex>0</CourseIndex>';
-            // xml += '<SubjectInfo>';
-            // xml += '<SubjectCode>' + SubjectCode + '</SubjectCode>';
-            // xml += '<SubjectName>' + SubjectName + '</SubjectName>';
-            // xml += '<SubjectCoordinator>' + SubjectCoordinator + '</SubjectCoordinator>';
-            // xml += '<SubjectDescription>' + SubjectDescription + '</SubjectDescription>';
-            // xml += '<CreditPoints>' + CreditPoints + '</CreditPoints>';
-            // xml += '<StudyYear>' + StudyYear + '</StudyYear>';
-            // xml += '<TeachingPeriod>' + TeachingPeriod + '</TeachingPeriod>';
-            // xml += '</SubjectInfo>';
-            // $(".map").append(xml)
     };
 
     Load_Step2();
     console.log("Step 2")
-    var step = 9;
+    var step = 3;
     var step4inner = 0;
     $('#next').on('click', function() {
         switch(true) {
@@ -588,6 +555,15 @@ $(document).ready(function() {
                 break;
             default:
                 console.log("error")
+        };
+        if (step == 4 + SLOCount + 1 && $('.warning-number').length>0){
+            alert("Sum of weight and SLO must be 100")
+            step --;
+        }
+        if (step > 4 + SLOCount){
+            $('#next').addClass("hide");
+        }else{
+            $("#next").removeClass("hide");
         };
         if (step >= 4 && step < 4 + SLOCount){
             $(".page").siblings().addClass("hide");
@@ -640,6 +616,11 @@ $(document).ready(function() {
                 break;
             default:
                 console.log("error")
+        };
+        if (step > 4 + SLOCount+1){
+            $('#next').addClass("hide");
+        }else{
+            $("#next").removeClass("hide");
         };
         if (step >= 5 && step < 5 + SLOCount){
             $(".page").siblings().addClass("hide");
