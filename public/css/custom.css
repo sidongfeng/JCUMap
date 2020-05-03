@@ -1,6 +1,6 @@
 /* Write your custom CSS here */
 .page-container{
-    margin: 70px;
+    margin: 20px;
 }
 
 ul{
@@ -35,9 +35,6 @@ ul{
 
 .intro-flow{
 	margin-top: 50px;
-	
-}
-.intro-list{
 	
 }
 
@@ -215,12 +212,17 @@ ul{
 }
 
 .DL-image{
-	position: absolute;
+	/* position: absolute; */
+	z-index: 10;
+	position:fixed;
+	top:0;
+	left:0;
 }
 
 .DL-image img{
-	width:100%;
+	width:80%;
 	height: auto;
+	z-index: 10;
 }
 
 .warning-number{
@@ -268,4 +270,8 @@ ul{
 
 .large-row{
 	height: 150px;
+}
+
+hr {
+	margin: 0;
 }

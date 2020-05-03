@@ -203,7 +203,31 @@ $(document).ready(function() {
         html += '          </td>';
         html += '          <td>';
         html += '              <select class="form-select-large" id="PoaType'+j+'">';
-        html += '                  <option value ="6.0">6.0</option>';
+        html += '                   <optgroup label="Exams">'
+        html += '                       <option value ="0">Test/Exam (Invigilated)</option>';
+        html += '                       <option value ="1">Test/Quiz (Non-Invigilated)</option>';
+        html += '                       <option value ="2">Skill Test (Demonstration/Laboratory/Studio/Clinic/Field/Other)</option>';
+        html += '                       <option value ="3">Objective Structured Clinical Examination</option>';
+        html += '                   <optgroup label="Oral & Performance">'
+        html += '                       <option value ="4">Creative Work</option>';
+        html += '                       <option value ="5">Participation/Leadership</option>';
+        html += '                       <option value ="6">Performance (Artistic/Exhibition/Moot Court/Other)</option>';
+        html += '                       <option value ="7">Presentation (Seminar/Debate/Forum/Critique/Other)</option>';
+        html += '                       <option value ="8">Teamwork Performance Evaluation</option>';
+        html += '                   <optgroup label="Written Discourses">'
+        html += '                       <option value ="9">Dissertation/Thesis/Research Paper</option>';
+        html += '                       <option value ="10">Journal (Field/WIL/Laboratory/Reflective/Other)</option>';
+        html += '                       <option value ="11">Portfolio</option>';
+        html += '                       <option value ="12">Poster</option>';
+        html += '                       <option value ="13">Proposal</option>';
+        html += '                       <option value ="14">Report (Experimental/Analytical)</option>';
+        html += '                       <option value ="15">Report (Project/Design/Research)</option>';
+        html += '                       <option value ="16">Review (Literature/Critical)</option>';
+        html += '                       <option value ="17">Tutorial Submission/Workbook/Logbook</option>';
+        html += '                       <option value ="18">Other Writing (Abstract/Annotated Bibliography/Case Study/Essay/Other)</option>';
+        html += '                   <optgroup label="Vocational">'
+        html += '                       <option value ="19">Professional Practice (Planning/Execution/Report)</option>';
+        html += '                       <option value ="20">Software/Manufactured Design/Other Physical Output</option>';
         html += '              </select>';
         html += '          </td>';
         html += '          <td>';
@@ -412,7 +436,31 @@ $(document).ready(function() {
             html += '          </td>';
             html += '          <td>';
             html += '              <select class="form-select-large" id="PoaType'+j+'">';
-            html += '                  <option value ="6.0">6.0</option>';
+            html += '                   <optgroup label="Exams">'
+            html += '                       <option value ="0">Test/Exam (Invigilated)</option>';
+            html += '                       <option value ="1">Test/Quiz (Non-Invigilated)</option>';
+            html += '                       <option value ="2">Skill Test (Demonstration/Laboratory/Studio/Clinic/Field/Other)</option>';
+            html += '                       <option value ="3">Objective Structured Clinical Examination</option>';
+            html += '                   <optgroup label="Oral & Performance">'
+            html += '                       <option value ="4">Creative Work</option>';
+            html += '                       <option value ="5">Participation/Leadership</option>';
+            html += '                       <option value ="6">Performance (Artistic/Exhibition/Moot Court/Other)</option>';
+            html += '                       <option value ="7">Presentation (Seminar/Debate/Forum/Critique/Other)</option>';
+            html += '                       <option value ="8">Teamwork Performance Evaluation</option>';
+            html += '                   <optgroup label="Written Discourses">'
+            html += '                       <option value ="9">Dissertation/Thesis/Research Paper</option>';
+            html += '                       <option value ="10">Journal (Field/WIL/Laboratory/Reflective/Other)</option>';
+            html += '                       <option value ="11">Portfolio</option>';
+            html += '                       <option value ="12">Poster</option>';
+            html += '                       <option value ="13">Proposal</option>';
+            html += '                       <option value ="14">Report (Experimental/Analytical)</option>';
+            html += '                       <option value ="15">Report (Project/Design/Research)</option>';
+            html += '                       <option value ="16">Review (Literature/Critical)</option>';
+            html += '                       <option value ="17">Tutorial Submission/Workbook/Logbook</option>';
+            html += '                       <option value ="18">Other Writing (Abstract/Annotated Bibliography/Case Study/Essay/Other)</option>';
+            html += '                   <optgroup label="Vocational">'
+            html += '                       <option value ="19">Professional Practice (Planning/Execution/Report)</option>';
+            html += '                       <option value ="20">Software/Manufactured Design/Other Physical Output</option>';
             html += '              </select>';
             html += '          </td>';
             html += '          <td>';
@@ -450,6 +498,9 @@ $(document).ready(function() {
         $(".table-responsive").append(html);
         if ($(".step5-tbody").find("tr").length<=2){
             $("#step5-remove").attr("disabled","true");
+        };
+        for (var j=0; j<PieceOfAssessmentList.length; j++){
+            $("#PoaType"+j).get(0).selectedIndex=PieceOfAssessmentList[j]["PoaType"];
         };
 
         /* 设置每一个weight change */
@@ -508,6 +559,40 @@ $(document).ready(function() {
 
     /* Load Step 6 */ 
     var Load_Step6 = function(){
+        var html = "";
+        html += "<div class='row'>"
+        html += '<div class="col-lg-12">'
+        html += "SubjectCode: " + SubjectCode;
+        html += "</div>"
+        html += '<div class="col-lg-12">'
+        html += "SubjectName: " + SubjectName;
+        html += "</div>"
+        html += '<div class="col-lg-12">'
+        html += "SubjectCoordinator: " + SubjectCoordinator;
+        html += "</div>"
+        html += '<div class="col-lg-12">'
+        html += "SubjectDescription: " + SubjectDescription;
+        html += "</div>"
+        html += '<div class="col-lg-12">'
+        html += "CreditPoints: " + CreditPoints;
+        html += "</div>"
+        html += '<div class="col-lg-12">'
+        html += "StudyYear: " + StudyYear;
+        html += "</div>"
+        html += '<div class="col-lg-12">'
+        html += "TeachingPeriod: " + TeachingPeriod;
+        html += "</div>"
+        html += '<div class="col-lg-12">'
+        html += "SLOCount: " + SLOCount;
+        html += "</div>"
+        html += '<div class="col-lg-12">'
+        html += "MappingClassList: " + MappingClassList;
+        html += "</div>"
+        html += '<div class="col-lg-12">'
+        html += "PieceOfAssessmentList: " + PieceOfAssessmentList;
+        html += "</div>"
+        html += "</div>"
+        $(".map").append(html)
     };
 
     Load_Step2();
