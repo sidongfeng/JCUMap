@@ -12,7 +12,7 @@ $(document).ready(function() {
     var CreditPoints = 0;
     var StudyYear = 0;
     var TeachingPeriod = 0;
-    var SLOCount = 0;
+    var SLOCount = 5;
     var MappingClassList = [];
     var PieceOfAssessmentList = [];
 
@@ -43,9 +43,9 @@ $(document).ready(function() {
         console.log('Load XML')
         $.ajax({
             type: "GET",
-            url: "../data/"+filename,
+            url: "../../data/inputs/"+filename,
             dataType: "xml",
-            async: false, //设置为同步请求
+            async: false,
             error: function(xml)
             {
                 alert("XML Not found!");
@@ -100,8 +100,6 @@ $(document).ready(function() {
           });
     }
     
-
-
 
 
     /* Step 3 Add function  */
@@ -296,7 +294,8 @@ $(document).ready(function() {
         SubjectName = $("#SubjectName").val();
         SubjectCoordinator = $("#SubjectCoordinator").val();
         SubjectDescription = $("#SubjectDescription").val();
-        CreditPoints = $("#CreditPoints").get(0).selectedIndex;
+        CreditPoints = $("#CreditPoints").val();
+        console.log(CreditPoints)
         StudyYear = $("#StudyYear").get(0).selectedIndex;
         TeachingPeriod = $("#TeachingPeriod").get(0).selectedIndex;
     };
@@ -360,19 +359,23 @@ $(document).ready(function() {
         var SubjectLearningOutcome = MappingClassList[index]['SubjectLearningOutcome'];
         var DLList = MappingClassList[index]['DL'];
         var IsTickedList = MappingClassList[index]['IsTicked'];
+        console.log(IsTickedList)
         document.getElementById("step4-input").getElementsByClassName("title")[0].innerHTML = "<strong>SLO"+(index+1)+": </strong>"+SubjectLearningOutcome;
         for (var i=0; i<DLList.length; i++){
-            if (DLList[i] == "1"){
-                // BUG: if add slo, it does not show DL1
-                $(".step4-input-checkbox").eq(i).find("select").find("option:contains('DL1')").attr("selected", false);
-            }else{
-                $(".step4-input-checkbox").eq(i).find("select").find("option:contains('DL"+DLList[i]+"')").attr("selected", true);
-            }
+            // if (DLList[i] == "1"){
+            //     // BUG: if add slo, it does not show DL1
+            //     $(".step4-input-checkbox").eq(i).find("select").find("option:contains('DL1')").attr("selected", 'selected');
+            //     console.log(1)
+            // }else{
+            //     $(".step4-input-checkbox").eq(i).find("select").find("option:contains('DL"+DLList[i]+"')").attr("selected", true);
+            // }
+            $(".step4-input-checkbox").eq(i).find("select").val((parseInt(DLList[i])-1).toString());
             if (IsTickedList[i]){
-                $(".step4-input-checkbox").eq(i).find("input").attr("checked", true);
+                console.log($(".step4-input-checkbox").eq(i).find("input"))
+                $(".step4-input-checkbox").eq(i).find("input").prop("checked", true);
                 $(".step4-input-checkbox").eq(i).parent().parent().addClass('highlight');
             }else{
-                $(".step4-input-checkbox").eq(i).find("input").attr("checked", false);
+                $(".step4-input-checkbox").eq(i).find("input").prop("checked", false);
                 $(".step4-input-checkbox").eq(i).parent().parent().removeClass('highlight');
             };
         };
@@ -585,18 +588,48 @@ $(document).ready(function() {
         html += '<div class="col-lg-12">'
         html += "SLOCount: " + SLOCount;
         html += "</div>"
-        html += '<div class="col-lg-12">'
-        html += "MappingClassList: " + MappingClassList;
+        // html += '<div class="col-lg-12">'
+        // html += "MappingClassList: " + MappingClassList;
+        // html += "</div>"
+        // html += '<div class="col-lg-12">'
+        // html += "PieceOfAssessmentList: " + PieceOfAssessmentList;
+        // html += "</div>"
         html += "</div>"
-        html += '<div class="col-lg-12">'
-        html += "PieceOfAssessmentList: " + PieceOfAssessmentList;
-        html += "</div>"
-        html += "</div>"
-        $(".map").append(html)
+        $(".map").append(html);
+
+        var data = JSON.stringify({
+            "SubjectCode": SubjectCode,
+            "SubjectName": SubjectName,
+            "SubjectCoordinator": SubjectCoordinator,
+            "SubjectDescription": SubjectDescription,
+            "CreditPoints": CreditPoints,
+            "StudyYear": StudyYear,
+            "TeachingPeriod": TeachingPeriod,
+            "SLOCount": SLOCount,
+            "MappingClassList": JSON.stringify(MappingClassList),
+            "PieceOfAssessmentList": JSON.stringify(PieceOfAssessmentList)
+        });
+
+        $.ajax({
+            type: "POST",
+            url: "/save",
+            data: data,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(data){
+                $(".btn-save").attr("href", data.result_path);
+                $(".btn-save").removeClass("hide");
+                // alert(data.result_path);
+            },
+            failure: function(errMsg) {
+                alert(errMsg);
+            }
+        });
     };
 
     Load_Step2();
     console.log("Step 2")
+    // var step = 10;
     var step = 3;
     var step4inner = 0;
     $('#next').on('click', function() {
@@ -629,7 +662,7 @@ $(document).ready(function() {
                 step4inner++;
                 break;
             case step == 4 + SLOCount:
-                // Store_Step4(step4inner-1);
+                Store_Step4(step4inner-1);
                 Load_Step5();
                 console.log("Step 5")
                 break;
@@ -647,8 +680,10 @@ $(document).ready(function() {
         }
         if (step > 4 + SLOCount){
             $('#next').addClass("hide");
+            $(".btn-save").removeClass("hide");
         }else{
             $("#next").removeClass("hide");
+            $(".btn-save").addClass("hide");
         };
         if (step >= 4 && step < 4 + SLOCount){
             $(".page").siblings().addClass("hide");
@@ -664,6 +699,8 @@ $(document).ready(function() {
             $(".intro-list").siblings().removeClass("intro-list-active").eq(step-1).addClass("intro-list-active");
         };
         step ++;
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false; 
     });
 
     $('#previous').on('click', function() {
@@ -683,6 +720,7 @@ $(document).ready(function() {
                 console.log("Step 2")
                 break;
             case step == 4:
+                step4inner--;
                 Load_Step3();
                 console.log("Step 3")
                 break;
@@ -704,8 +742,10 @@ $(document).ready(function() {
         };
         if (step > 4 + SLOCount+1){
             $('#next').addClass("hide");
+            $(".btn-save").removeClass("hide");
         }else{
             $("#next").removeClass("hide");
+            $(".btn-save").addClass("hide");
         };
         if (step >= 5 && step < 5 + SLOCount){
             $(".page").siblings().addClass("hide");
@@ -720,7 +760,13 @@ $(document).ready(function() {
             $("#step"+(step-1)).removeClass("hide");
             $(".intro-list").siblings().removeClass("intro-list-active").eq(step-2).addClass("intro-list-active");
         };
-        
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false; 
+    });
+    
+
+    $('.btn-save').on('click', function() {
+        alert("Mapping File Generated!")
     });
     
 });

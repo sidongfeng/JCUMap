@@ -246,11 +246,19 @@ ul{
 #next{
 	float: right;
 	margin-top: 50px;
+	margin-right: 30px;
 }
 
 #previous{
 	float: left;
 	margin-top: 50px;
+	margin-left: 30px;
+}
+
+.btn-save{
+	float: right;
+	margin-top: 50px;
+	margin-right: 30px;
 }
 
 .content{
