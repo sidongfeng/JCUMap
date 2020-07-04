@@ -85,4 +85,6 @@ node server.js
 ## Resources
 1. Development of a competency mapping tool for undergraduate professional degree programmes, using mechanical engineering as a case study [pdf](https://github.com/sidongfeng/JCUMap/blob/master/resources/Holmes%2Bet%2Bal%2B2018%2BEuropean%2BJournal%2Bof%2BEngineering%2BEducation.pdf)
 
-2. TODO: Tutorial Video 
+2. Example Course xml [COMP4130.xml](https://github.com/sidongfeng/JCUMap/blob/master/resources/COMP4130.xml) and Mapping xml [COMP4130MappingResult.xml](https://github.com/sidongfeng/JCUMap/blob/master/resources/COMP4130MappingResult.xml)
+
+3. TODO: Tutorial Video 
