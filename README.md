@@ -1,9 +1,9 @@
 # JCUMap
 
-## NodeJS 
+## NodeJS (Prefer LTS Version, Testing Environment: v12.3.1)
 
 ### Windows
-1. Download package from [https://nodejs.org/en/download/](https://nodejs.org/en/download/). (Prefer LTS Version, Testing Environment: v12.3.1)
+1. Download package from [https://nodejs.org/en/download/](https://nodejs.org/en/download/). 
 
 2. Install, keep default
 <div style="color:#0000FF" align="center">
