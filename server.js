@@ -114,9 +114,9 @@ app.post('/save', function (req, res) {
 // }).listen(1337, '0.0.0.0');
 // console.log('Server running at http://127.0.0.1:1337/');
 
-// app.listen(8000, function(){
-//     console.log("Working on port 8000");
-// });
+app.listen(8000, function(){
+    console.log("Working on port 8000");
+});
 
-let http_server = http.createServer(app);
-http_server.listen(8000, '149.28.169.174')
+// let http_server = http.createServer(app);
+// http_server.listen(8000, '0.0.0.0')
