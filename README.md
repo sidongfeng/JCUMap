@@ -83,6 +83,6 @@ node server.js
 ```
 
 ## Resources
-1. Development of a competency mapping tool for undergraduate professional degree programmes, using mechanical engineering as a case study [pdf]()
+1. Development of a competency mapping tool for undergraduate professional degree programmes, using mechanical engineering as a case study [pdf](https://github.com/sidongfeng/JCUMap/blob/master/resources/Holmes%2Bet%2Bal%2B2018%2BEuropean%2BJournal%2Bof%2BEngineering%2BEducation.pdf)
 
 2. TODO: Tutorial Video 
