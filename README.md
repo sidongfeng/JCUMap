@@ -74,7 +74,7 @@ cd JCUMap
 
 2. Install all the python dependencies using pip:
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 3. Run server. Website will be available at http://localhost:8000/
