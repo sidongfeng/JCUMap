@@ -110,6 +110,6 @@ app.post('/save', function (req, res) {
 
 
 
-app.listen(8000, '0.0.0.0', function(){
+app.listen(8000, function(){
     console.log("Working on port 8000");
 });
