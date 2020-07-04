@@ -3,6 +3,7 @@ var express	= require("express");
 var spawn = require("child_process").spawn; 
 const fs = require('fs');
 var app	= express();
+var http = require('http');
 
 var uploadPath = 'data/inputs';
 var output_root = '';
@@ -109,6 +110,6 @@ app.post('/save', function (req, res) {
 
 
 
-app.listen(8000,function(){
+app.listen(8000, '0.0.0.0', function(){
     console.log("Working on port 8000");
 });
